@@ -1,6 +1,6 @@
 import React from 'react'
 import CardApplication from '@/components/application/cardApplication'
-import NavbarWebsite from '@/components/website/NavbarWebsite'
+import NavbarWebsite from '@/components/website/navbarWebsite'
 import ThreeImage from '@/components/global/threeImage'
 
 

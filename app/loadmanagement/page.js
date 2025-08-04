@@ -1,5 +1,5 @@
 import LoadSection from "@/components/loadManagement/loadSection";
-import NavbarWebsite from "@/components/website/NavbarWebsite";
+import NavbarWebsite from "@/components/website/navbarWebsite";
 import React from "react";
 
 export default function LoadManagement() {

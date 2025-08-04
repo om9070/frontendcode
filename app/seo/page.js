@@ -1,6 +1,6 @@
 import React from 'react'
 import SeoSection from '@/components/seoSection/seoweb'
-import NavbarWebsite from '@/components/website/NavbarWebsite'
+import NavbarWebsite from '@/components/website/navbarWebsite'
 
 export default function Seo() {
   return (
