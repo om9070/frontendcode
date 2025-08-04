@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+
+
+.snip *,
+.snip *:before,
+.snip *:after {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.snip {
+  position: relative;
+  overflow: hidden;
+  width: 15%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #00dbde;
+  font-size: 16px;
+  margin: 30px 20px;
+  text-align: left;
+  transform: translateZ(0);
+  box-shadow: 10px 5px 5px #a4ccd9;
+  border-radius: 8px;
+}
+
+.snip:hover .snip__title,
+.snip:hover .snip__text {
+  transform: translateY(0);
+  opacity: 0.9;
+  transition-delay: 0.2s;
+}
+
+.snip::before,
+.snip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #a4ccd9;
+  opacity: 0.5;
+  transition: all 0.45s ease;
+}
+
+.snip::before {
+  transform: skew(30deg) translateX(-80%);
+}
+
+.snip::after {
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.snip:hover::before {
+  transform: skew(30deg) translateX(-20%);
+  transition-delay: 0.05s;
+}
+
+.snip:hover::after {
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.snip:hover .snip__figcaption::before {
+  transform: skew(30deg) translateX(-40%);
+  transition-delay: 0.15s;
+}
+
+.snip:hover .snip__figcaption::after {
+  transform: skew(-30deg) translateX(-30%);
+  transition-delay: 0.1s;
+}
+
+.snip__image {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+  height: -webkit-fill-available;
+}
+
+.snip__figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 25px 40% 25px 20px;
+}
+
+.snip__figcaption::before,
+.snip__figcaption::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0f172a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: "";
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip__figcaption::before {
+  transform: skew(30deg) translateX(-100%);
+}
+
+.snip__figcaption::after {
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.snip__title,
+.snip__text {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip__title {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.snip__text {
+  font-size: 0.9em;
+}
+
+.snip__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* Initial hidden state */
+.animateOnScroll {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animateOnScrollAn {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Triggered when visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,246 @@
+/* EventPlanningUI.module.css */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url('/appback1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background: linear-gradient(#0f172a, #64748b);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  box-sizing: border-box; */
+
+      width: 96%;
+    min-height: 100vh;
+    background: linear-gradient(#0f172a, #64748b);
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    border-radius: 0px 100px / 120px;
+    margin: 2rem auto;
+}
+
+.backgroundImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.leftCards, .rightCards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.leftCards {
+  align-items: flex-start;
+}
+
+.rightCards {
+  align-items: flex-end;
+}
+
+.card {
+  background: #c9d3d5;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 32px 28px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid ;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  background: #0f172a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+  color: #a4ccd9;
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 1);
+  color: #00dbde;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  color: #8B5A6B;
+  stroke-width: 2;
+}
+
+.cardTitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 16px 0;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.cardDescription {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  font-style: italic;
+}
+
+.learnMore {
+  background: transparent;
+  border: none;
+  color: #2D1B1F;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: lowercase;
+  cursor: pointer;
+  padding: 8px 0;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.learnMore::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2D1B1F;
+  transform: scaleX(1);
+  transition: all 0.3s ease;
+}
+
+.learnMore:hover {
+  color: #1A0E11;
+  transform: translateY(-2px);
+}
+
+.learnMore:hover::after {
+  transform: scaleX(1.1);
+  height: 2px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  color: #666;
+  z-index: 2;
+}
+
+.attributionLink {
+  color: #8B5A6B;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.attributionLink:hover {
+  color: #2D1B1F;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .backgroundImage {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 30px;
+  }
+  
+  .leftCards, .rightCards {
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .rightCards {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .backgroundImage {
+    padding: 30px 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 320px;
+    padding: 28px 24px;
+  }
+  
+  .leftCards, .rightCards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .backgroundImage {
+    padding: 20px 15px;
+  }
+  
+  .card {
+    padding: 24px 20px;
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+  }
+  
+  .cardDescription {
+    font-size: 13px;
+  }
+  
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
