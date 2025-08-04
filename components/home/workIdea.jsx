@@ -28,7 +28,7 @@ export default function WorkIdea() {
       <div className=" w-75 m-auto my-4 mb-3">
         <div className="row g-0" ref={sectionRef}>
           <div className={`col-md-6 animateOnScrollLeft ${visible?"visible":""}`}>
-            <img src="/worksample.jpg" className="img-fluid rounded-start" alt="sample" />
+            <img src="/workSample.jpg" className="img-fluid rounded-start" alt="sample" />
           </div>
           <div className={`col-md-6 my-auto animateOnScrollRight ${visible?"visible":""}`}>
             <div className="card-body">
