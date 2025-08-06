@@ -256,11 +256,6 @@ export default function BlogSection() {
           style={{ width: "85%", margin: "auto" }}
         >
           <div className="col-md-8" key={data.id}>
-            {/* <img
-              src={data.image}
-              className="imagebloglower1"
-              alt="imageround"
-            /> */}
             <Image
               src={data.image}
               className="imagebloglower1"
@@ -284,13 +279,8 @@ export default function BlogSection() {
             {
               remainData.slice(3, 10).map((list, index) => {
                 return (
-                    <div className="row gap-1" key={list?.id}>
+                    <div className="row gap-1" key={list?.id} onClick={() => setVeiwId(list.id)}>
                       <div className="col-md-4 ">
-                        {/* <img
-                          src={list.image}
-                          alt="imageround"
-                          className="imagebloglower2"
-                        /> */}
                         <Image
                           src={list.image}
                           alt="imageround"
@@ -307,7 +297,7 @@ export default function BlogSection() {
                       <div className="col-md-7 d-flex align-items-start justify-content-center flex-column">
                         <div className="my-2 ">
                           <h5 className="font">{list.title}</h5>
-                          <button className="btn text-success " onClick={() => setVeiwId(list.id)}>read more</button>
+                          <button className="btn text-success " >read more</button>
                         </div>
                       </div>
                     </div>
@@ -318,12 +308,7 @@ export default function BlogSection() {
           <div className="col-md-3 ">
             {remainData.slice(0, 3).map((d, i) => {
               return (
-                <div className="my-2" key={d.id}>
-                  {/* <img
-                    className="imagebloglower2"
-                    src={d.image}
-                    alt="imageround"
-                  /> */}
+                <div className="my-2" key={d.id} onClick={() => setVeiwId(d.id)}>
                   <Image
                     className="imagebloglower2"
                     src={d.image}
@@ -339,7 +324,7 @@ export default function BlogSection() {
                   />
                   <h5 className="font">{d.title}</h5>
 
-                  <button className="btn text-success" onClick={() => setVeiwId(d.id)}>read more</button>
+                  <button className="btn text-success" >read more</button>
                 </div>
               );
             })}

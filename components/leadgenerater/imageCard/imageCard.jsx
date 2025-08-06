@@ -5,7 +5,6 @@ export default function ImageCard() {
   return (
     <div className="my-6" style={{ height: "100vh" }}>
       <div className="imageCard">
-        {/* <img src="/digital/digital8.webp" className='backgourndImage' alt='digital8' /> */}
         <Image
           src="/digital/digital8.webp"
           className="backgourndImage"
@@ -35,14 +34,6 @@ export default function ImageCard() {
           </p>
         </div>
         <div>
-          {/* <img
-                        src="/digital/digital7.webp"
-                        alt="Image 2"
-                        className='imagesec'
-                        width={400}
-                        height={440}
-                        style={{borderRadius:"8px"}}
-                    /> */}
 
           <Image
             src="/digital/digital7.webp"

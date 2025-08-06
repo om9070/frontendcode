@@ -24,11 +24,6 @@ const SeoSection = () => {
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <div className={styles.imageContainer}>
-                {/* <img
-                  src="/seo5.webp"
-                  alt="Professional mechanic"
-                  className={styles.serviceImage}
-                /> */}
                 <Image
                   src="/seo5.webp"
                   alt="Professional mechanic"
@@ -68,11 +63,6 @@ const SeoSection = () => {
 
             <div className={styles.serviceCard}>
               <div className={styles.imageContainer}>
-                {/* <img
-                  src="/seo1.webp"
-                  alt="Tire service"
-                  className={styles.serviceImage}
-                /> */}
                 <Image
                   src="/seo1.webp"
                   alt="Tire service"
@@ -112,11 +102,6 @@ const SeoSection = () => {
 
             <div className={styles.serviceCard}>
               <div className={styles.imageContainer}>
-                {/* <img
-                  src="/seo6.webp"
-                  alt="Quality service tools"
-                  className={styles.serviceImage}
-                /> */}
                 <Image
                   src="/seo6.webp"
                   alt="Quality service tools"
@@ -190,11 +175,6 @@ const SeoSection = () => {
           <Link href="/contact" className="btn w-25 btn-info">Let's Connect</Link>
         </div>
         <div className="col-10 col-md-6 text-center">
-          {/* <img
-            className="websiteImageSection"
-            src="/seo4.webp"
-            alt="website section"
-          /> */}
           <Image
             className="websiteImageSection"
             src="/seo4.webp"
@@ -213,11 +193,6 @@ const SeoSection = () => {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 text-center">
-          {/* <img
-            className="websiteImage img-fluid"
-            src="/seo2.webp"
-            alt="website section"
-          /> */}
           <Image
             className="websiteImage img-fluid"
             src="/seo2.webp"

@@ -8,7 +8,6 @@ export default function ThreeImage({ img1, img2, img3, title, description }) {
       <div className={style.mainSection}>
         <div className={style.upperSection}>
           <div className={style.box}>
-            {/* <img src={img1} className={style.imagesec} alt="showing" /> */}
             <Image
               src={img1}
               className={style.imagesec}
@@ -23,7 +22,6 @@ export default function ThreeImage({ img1, img2, img3, title, description }) {
             />
           </div>
           <div className={style.box}>
-            {/* <img src={img2} className={style.imagesec} alt="showing1" /> */}
             <Image
               src={img2}
               className={style.imagesec}
@@ -39,7 +37,6 @@ export default function ThreeImage({ img1, img2, img3, title, description }) {
           </div>
         </div>
         <div className={style.imagedown}>
-          {/* <img src={img3} className={style.imagesec} alt="showing2" /> */}
           <Image
             src={img3}
             className={style.imagesec}

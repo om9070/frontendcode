@@ -10,7 +10,6 @@ export default function SectionA() {
         <div className={style.contentLeft}>
           <div className={style.row}>
             <div className={style.imgWrapper}>
-              {/* <img src="/digital/digital1.webp" alt="digital" /> */}
               <Image
                 src="/digital/digital1.webp"
                 alt="digital"
@@ -24,7 +23,6 @@ export default function SectionA() {
               />
             </div>
             <div className={style.imgWrapper}>
-              {/* <img src="/digital/digital2.webp" alt="digital2" /> */}
               <Image
                 src="/digital/digital2.webp"
                 alt="digital2"
@@ -38,12 +36,7 @@ export default function SectionA() {
               />
             </div>
             <div className={style.imgWrapper}>
-              <img src="/digital/digital10.webp" alt="digital10" />
               <Image
-                // src={testimonials[currentSlide].image}
-                // className={!isAnimating ? "zoom-in" : ""}
-                // alt="Customer Feedback"
-
                 src="/digital/digital10.webp"
                 alt="digital10"
                 width={98}
@@ -56,7 +49,6 @@ export default function SectionA() {
               />
             </div>
             <div className={style.imgWrapper}>
-              {/* <img src="/digital/digital4.webp" alt="digital4" /> */}
               <Image
                 src="/digital/digital4.webp"
                 alt="digital4"

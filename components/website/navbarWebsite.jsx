@@ -18,11 +18,6 @@ export default function NavbarWebsite({ header, description, route }) {
         </div>
 
         <div className={styles["hero-img-box"]}>
-          {/* <img
-            src="/website-bg.webp"
-            alt="Woman enjoying food"
-            className={styles["hero-img"]}
-          /> */}
 
           <Image
             src="/website-bg.webp"

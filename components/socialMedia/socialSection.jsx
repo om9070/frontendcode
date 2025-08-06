@@ -33,46 +33,6 @@ export default function SocialSection() {
             </p>
           </div>
           <div className="col-md-8 manageimage">
-            {/* <img
-              src="/digital/digital3.webp"
-              alt="imagesection"
-              width={250}
-              height={250}
-            /> */}
-            {/* <img
-              src="/ads/ads8.webp"
-              alt="imagesection"
-              width={250}
-              height={250}
-            /> */}
-            {/* <img
-              src="/digital/digital4.webp"
-              alt="imagesection"
-              width={250}
-              height={250}
-            /> */}
-
-            {/* <img
-              src="/ads/ads7.webp"
-              alt="imagesection"
-              width={250}
-              height={250}
-            /> */}
-
-            {/* <img
-              src="/digital/digital5.webp"
-              alt="imagesection"
-              width={250}
-              height={250}
-            />
-
-            <img
-              src="/ads/ads9.webp"
-              alt="imagesection"
-              width={250}
-              height={250}
-            /> */}
-
             <Image
               src="/digital/digital5.webp"
               alt="imagesection"
@@ -173,11 +133,6 @@ export default function SocialSection() {
           <div className={styles.container}>
             {/* Left - Images */}
             <div className={styles.images}>
-              {/* <img
-                src="/ads/ads11.webp"
-                alt="Image 2"
-                className={`${styles.image} imagesec`}
-              /> */}
               <Image
                 src="/ads/ads11.webp"
                 alt="Image 2"
@@ -239,11 +194,6 @@ export default function SocialSection() {
             </div>
             {/* Left - Images */}
             <div className={`${styles.images} imagesec`}>
-              {/* <img
-                src="/ads/ads10.webp"
-                alt="Image 2"
-                className={styles.image}
-              /> */}
               <Image
                 src="/ads/ads10.webp"
                 alt="Image 2"
@@ -264,11 +214,6 @@ export default function SocialSection() {
           <div className={styles.container}>
             {/* Left - Images */}
             <div className={styles.images}>
-              {/* <img
-                src="/ads/ads6.webp"
-                alt="Image 2"
-                className={`${styles.image} imagesec`}
-              /> */}
               <Image
                 src="/ads/ads6.webp"
                 alt="Image 2"

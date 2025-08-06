@@ -32,8 +32,6 @@ export default function WorkIdea() {
               visible ? "visible" : ""
             }`}
           >
-            {/* <img src="/workSample.webp" className="img-fluid rounded-start" alt="sample" /> */}
-
             <Image
               src="/workSample.webp"
               className="img-fluid rounded-start"

@@ -101,11 +101,6 @@ export default function CardsSection() {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 text-center">
-          {/* <img
-            className="websiteImage img-fluid"
-            src="/website4.webp"
-            alt="website section"
-          /> */}
           <Image
             className="websiteImage img-fluid"
             src="/website4.webp"
@@ -151,11 +146,6 @@ export default function CardsSection() {
           <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
         </div>
         <div className="col-10 col-md-5 text-center">
-          {/* <img
-            className="websiteImage img-fluid"
-            src="/website1.webp"
-            alt="website section"
-          /> */}
           <Image
             className="websiteImage img-fluid"
             src="/website1.webp"
@@ -173,11 +163,6 @@ export default function CardsSection() {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 text-center">
-          {/* <img
-            className="websiteImage img-fluid"
-            src="/website2.webp"
-            alt="website section"
-          /> */}
           <Image
             className="websiteImage img-fluid"
             src="/website2.webp"
@@ -221,11 +206,6 @@ export default function CardsSection() {
           <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
         </div>
         <div className="col-10 col-md-5 text-center">
-          {/* <img
-            className="websiteImage img-fluid"
-            src="/website3.webp"
-            alt="website section"
-          /> */}
           <Image
             className="websiteImage img-fluid"
             src="/website3.webp"

@@ -15,8 +15,6 @@ export default function LoadSection() {
     <>
       <div className={styles.herosec}>
         <div className={styles.heroleft}>
-          {/* <img src="/db3.webp" className={styles.imagesecOne} alt="..." /> */}
-          {/* <img src="/app3.webp" className={styles.imagesecTwo} alt="..." /> */}
           <Image
             src="/db3.webp"
             className={styles.imagesecOne}
@@ -64,7 +62,6 @@ export default function LoadSection() {
           <div className={styles.container}>
             {/* Left - Images */}
             <div className={styles.images}>
-              {/* <img src="/load1.webp" alt="Image 2" className={`${styles.image} imagesec`} /> */}
               <Image
                 src="/load1.webp"
                 alt="Image 2"
@@ -122,7 +119,6 @@ export default function LoadSection() {
             </div>
             {/* Left - Images */}
             <div className={`${styles.images} imagesec`}>
-              {/* <img src="/load2.webp" alt="Image 2" className={styles.image} /> */}
               <Image
                 src="/load2.webp"
                 alt="Image 2"
