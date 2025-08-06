@@ -1,7 +1,7 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
 
-import styles from "./BlogSection.module.css";
 
 export default function BlogSection() {
   const [viewId, setVeiwId] = useState(1);
@@ -21,7 +21,7 @@ export default function BlogSection() {
   The tutorial also addresses modern security challenges like API security, microservices security architecture, container security, and cloud security considerations. You'll learn about security monitoring, incident response planning, and how to implement security logging and alerting systems that detect and respond to threats in real-time.
   Practical implementation guides cover security frameworks, security headers, secure deployment practices, and how to create a security-first development culture within your organization. By following these proven security practices, you'll build applications that protect user data, maintain regulatory compliance, and resist both current and emerging security threats.`,
 
-      image: "/db2.jpg",
+      image: "/db2.webp",
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ export default function BlogSection() {
   The guide addresses modern considerations including artificial intelligence integration, augmented reality features, advanced camera functionality, and complex animation requirements that may influence platform choice. You'll also learn about hybrid approaches where core functionality uses cross-platform frameworks while performance-critical features employ native modules.
   Team skill requirements, hiring considerations, and development timeline implications are thoroughly examined, helping you align technology choices with available resources and business objectives. By the end of this comprehensive comparison, you'll have a clear framework for making data-driven decisions that optimize for your specific project requirements, budget constraints, and long-term strategic goals.`,
 
-      image: "/app3.jpg",
+      image: "/app3.webp",
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ export default function BlogSection() {
   Performance optimization techniques reveal how to achieve optimal app performance through efficient widget building, memory management, and build optimization. You'll learn about Flutter's developer tools, debugging techniques, and profiling methods that help identify and resolve performance bottlenecks.
   Real-world deployment strategies cover app store submission processes, continuous integration/continuous deployment (CI/CD) setup, and monitoring techniques that ensure successful app launches and ongoing maintenance. By mastering these Flutter concepts and techniques, you'll be equipped to build production-ready applications that deliver exceptional user experiences across all platforms.`,
 
-      image: "/apprnd4.jpg",
+      image: "/apprnd4.webp",
     },
     {
       id: 4,
@@ -69,7 +69,7 @@ export default function BlogSection() {
   Modern design trends are examined including neumorphism, glassmorphism, micro-interactions, and animation principles that enhance user delight without compromising usability. The guide also covers emerging design considerations for voice interfaces, augmented reality integration, and AI-powered personalization features.
   Performance implications of design decisions are thoroughly analyzed, including image optimization, animation performance, and design-to-development handoff processes that ensure design fidelity while maintaining optimal app performance. By mastering these mobile design principles and methodologies, you'll create user experiences that not only look beautiful but drive meaningful engagement, user satisfaction, and business success.`,
 
-      image: "/app4.jpeg",
+      image: "/app4.webp",
     },
     {
       id: 5,
@@ -87,7 +87,7 @@ export default function BlogSection() {
   International ASO strategies cover localization best practices, cultural considerations for different markets, and region-specific optimization techniques that can unlock new user bases and revenue streams. Real-world case studies demonstrate how apps like TikTok and Pokemon GO achieved global success through strategic ASO approaches.
   By implementing these proven ASO strategies and maintaining consistent optimization efforts, you'll significantly improve your app's discoverability, attract higher-quality users, and build sustainable organic growth that reduces long-term marketing costs while increasing user lifetime value.`,
 
-      image: "/app2.jpg",
+      image: "/app2.webp",
     },
     {
       id: 6,
@@ -105,7 +105,7 @@ export default function BlogSection() {
   Bundle size optimization strategies cover code splitting, unused code elimination, and asset optimization techniques that reduce initial app download size and improve startup performance. You'll learn about dynamic imports, lazy loading strategies, and build optimization configurations that create lean, fast-loading applications.
   Production deployment considerations include performance monitoring implementation, crash reporting setup, and continuous performance testing workflows that maintain optimal performance across app updates and diverse device configurations. Real-world case studies from companies like Facebook, Instagram, and Discord demonstrate how proper React Native optimization delivers exceptional user experiences that rival native applications while maintaining development efficiency advantages`,
 
-      image: "/apprnd3.jpg",
+      image: "/apprnd3.webp",
     },
     {
       id: 7,
@@ -135,7 +135,7 @@ export default function BlogSection() {
   Performance measurement and optimization using AI analytics tools reveal how to track SEO performance, identify improvement opportunities, and predict optimization impact using machine learning algorithms. The guide covers advanced attribution modeling, conversion tracking, and automated reporting systems that provide actionable insights for continuous SEO improvement.
   Future-proofing strategies explore emerging AI technologies including GPT integration, visual search optimization, and predictive SEO techniques that prepare your website for continuing evolution in search technology. Real-world case studies demonstrate how companies have successfully implemented AI-powered SEO strategies to achieve significant organic traffic growth and improved search visibility in competitive markets.`,
 
-      image: "/seo5.jpg",
+      image: "/seo5.webp",
     },
     {
       id: 9,
@@ -153,7 +153,7 @@ export default function BlogSection() {
   Compliance and privacy considerations address evolving regulations including GDPR, CCPA, and emerging privacy laws that affect email marketing practices. The guide covers consent management, data retention policies, and transparent privacy practices that build subscriber trust while maintaining regulatory compliance in an increasingly privacy-focused digital landscape.
   Future-proofing strategies explore emerging trends including voice-activated email, augmented reality integration, and blockchain-based email authentication that may reshape email marketing in coming years. Real-world case studies from various industries demonstrate successful email marketing strategies, optimization techniques, and results that provide actionable insights for businesses of all sizes and sectors.`,
 
-      image: "/digital/digital10.jpg",
+      image: "/digital/digital10.webp",
     },
     {
       id: 10,
@@ -171,7 +171,7 @@ export default function BlogSection() {
   ROI calculation and budget optimization methodologies help allocate marketing budgets across channels and campaigns based on actual performance data rather than assumptions or historical patterns. The guide covers multi-touch attribution implementation, media mix modeling, and incremental testing that reveals optimal budget allocation strategies for maximum marketing efficiency.
   Emerging analytics trends and future-proofing strategies explore developments in artificial intelligence, machine learning, and privacy-preserving analytics technologies that will shape marketing measurement in coming years. Real-world implementation guides help you build analytics capabilities that provide competitive advantages through superior data-driven decision making and marketing optimization.`,
 
-      image: "/seo4.jpg",
+      image: "/seo4.webp",
     },
     {
       id: 11,
@@ -181,7 +181,7 @@ export default function BlogSection() {
       readmore: ` We'll examine real-world case studies that demonstrate significant improvements in user engagement rates (up to 137% increase), conversion rates (up to 76% improvement), and page load speeds (up to 10x faster).
   The guide covers essential PWA components including service workers for offline functionality, web app manifests for installability, and the newest APIs like Background Sync, Web Share, and Payment Request that make PWAs more powerful than ever. You'll learn about performance optimization techniques, caching strategies, and how to implement features like push notifications and background synchronization.
   We'll also explore the business benefits of PWAs, including reduced app store dependency, lower development costs compared to native apps, improved SEO performance, and better user retention rates. The tutorial includes practical code examples, deployment strategies, and testing methodologies to ensure your PWA delivers exceptional user experiences across all devices and network conditions. By the end, you'll have the knowledge to build production-ready PWAs that engage users and drive business results`,
-      image: "/website3.jpg",
+      image: "/website3.webp",
     },
     {
       id: 12,
@@ -193,7 +193,7 @@ export default function BlogSection() {
   Container Queries represent the future of responsive design, allowing components to adapt based on their parent container's size rather than the entire viewport. This game-changing feature enables truly modular, reusable components that work perfectly whether they're displayed in a sidebar, main content area, or modal window. The tutorial includes practical implementation examples, browser support considerations, and polyfill strategies.
   Additionally, you'll learn about CSS custom properties (variables), modern pseudo-selectors, and how to combine these technologies for maximum efficiency. The guide includes performance considerations, debugging techniques, and best practices that will elevate your frontend development skills to professional standards while reducing code complexity and maintenance overhead`,
 
-      image: "/seo2.jpg",
+      image: "/seo2.webp",
     },
     {
       id: 13,
@@ -206,7 +206,7 @@ export default function BlogSection() {
   Advanced topics include critical rendering path optimization, resource prioritization with preload and prefetch directives, database query optimization, and server-side rendering strategies. Real-world case studies demonstrate how companies like Shopify and AliExpress achieved remarkable performance improvements, including load time reductions of 70% and conversion rate increases of 15-30%.
   The tutorial also covers performance budgets, automated testing workflows, and monitoring strategies to maintain optimal performance over time. By implementing these proven techniques, you'll create web experiences that load instantly, engage users effectively, and outperform competitors in both user satisfaction and search engine visibility`,
 
-      image: "/seo3.jpg",
+      image: "/seo3.webp",
     },
     {
       id: 14,
@@ -220,7 +220,7 @@ export default function BlogSection() {
   Business aspects include total cost of ownership analysis, vendor lock-in considerations, hosting requirements, and team skill requirements. The guide helps you evaluate factors like content workflow complexity, multi-site management needs, and internationalization requirements that influence CMS selection decisions.
   By the end of this comprehensive analysis, you'll have a clear framework for making informed CMS decisions that align with your technical capabilities, business objectives, and growth plans, ensuring your content management strategy supports both current needs and future expansion goals.`,
 
-      image: "/digital/digital5.jpg",
+      image: "/digital/digital5.webp",
     },
   ];
   const data = useMemo(() => {
@@ -255,30 +255,53 @@ export default function BlogSection() {
           className="row gap-1 my-4"
           style={{ width: "85%", margin: "auto" }}
         >
-          <div className="col-md-8  ">
-            <img
+          <div className="col-md-8" key={data.id}>
+            {/* <img
               src={data.image}
               className="imagebloglower1"
               alt="imageround"
+            /> */}
+            <Image
+              src={data.image}
+              className="imagebloglower1"
+              alt="imageround"
+              width={98}
+              height={98}
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
+              priority
             />
             <h1 className="font">{data.title}</h1>
             <p className="font">{data.description}</p>
             <button className="btn text-success " onClick={() => setlongdes(!longdes)}>read more</button>
             {
               longdes && <p className="font my-3">{data.readmore}</p>
-
             }
             <hr />
             {
               remainData.slice(3, 10).map((list, index) => {
                 return (
-                  <>
-                    <div className="row gap-1" key={index}>
+                    <div className="row gap-1" key={list?.id}>
                       <div className="col-md-4 ">
-                        <img
+                        {/* <img
                           src={list.image}
                           alt="imageround"
                           className="imagebloglower2"
+                        /> */}
+                        <Image
+                          src={list.image}
+                          alt="imageround"
+                          className="imagebloglower2"
+                          width={98}
+                          height={98}
+                          placeholder="blur"
+                          blurDataURL="/seo4.webp"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                          style={{ objectFit: "cover" }}
+                          quality={75}
                         />
                       </div>
                       <div className="col-md-7 d-flex align-items-start justify-content-center flex-column">
@@ -288,7 +311,6 @@ export default function BlogSection() {
                         </div>
                       </div>
                     </div>
-                  </>
                 )
               })
             }
@@ -296,11 +318,24 @@ export default function BlogSection() {
           <div className="col-md-3 ">
             {remainData.slice(0, 3).map((d, i) => {
               return (
-                <div className="my-2" key={i}>
-                  <img
+                <div className="my-2" key={d.id}>
+                  {/* <img
                     className="imagebloglower2"
                     src={d.image}
                     alt="imageround"
+                  /> */}
+                  <Image
+                    className="imagebloglower2"
+                    src={d.image}
+                    alt="imageround"
+                    width={98}
+                    height={98}
+                    placeholder="blur"
+                    blurDataURL="/seo4.webp"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                    style={{ objectFit: "cover" }}
+                    quality={75}
+                    
                   />
                   <h5 className="font">{d.title}</h5>
 

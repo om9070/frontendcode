@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function CardsSection() {
@@ -100,14 +101,26 @@ export default function CardsSection() {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 text-center">
-          <img
+          {/* <img
             className="websiteImage img-fluid"
-            src="/website4.jpg"
+            src="/website4.webp"
             alt="website section"
+          /> */}
+          <Image
+            className="websiteImage img-fluid"
+            src="/website4.webp"
+            alt="website section"
+            width={98}
+            height={98}
+            placeholder="blur"
+            blurDataURL="/seo4.webp"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+            style={{ borderRadius: "50px", objectFit: "cover" }}
+            quality={75}
           />
         </div>
         <div className="col-10 col-md-5 d-flex flex-column justify-content-center">
-          <h1 className="card-tittle"><span><i className="fa-solid fa-handshake" style={{marginRight:"10px"}}></i></span>Discovery & Planning</h1>
+          <h1 className="card-tittle"><span><i className="fa-solid fa-handshake" style={{ marginRight: "10px" }}></i></span>Discovery & Planning</h1>
           <p className="font">
             Define the website's goals, target audience, core features, and
             business objectives. Prepare a project brief and sitemap.
@@ -124,7 +137,7 @@ export default function CardsSection() {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 d-flex flex-column justify-content-center ">
-          <h1 className="card-tittle"><span><i className="fa-solid fa-object-ungroup" style={{marginRight:"10px"}}></i></span>Design Phase</h1>
+          <h1 className="card-tittle"><span><i className="fa-solid fa-object-ungroup" style={{ marginRight: "10px" }}></i></span>Design Phase</h1>
           <p className=" font">
             Craft a visual and interactive design that is user-friendly,
             responsive, and aligned with your brand.
@@ -138,34 +151,58 @@ export default function CardsSection() {
           <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
         </div>
         <div className="col-10 col-md-5 text-center">
-          <img
+          {/* <img
             className="websiteImage img-fluid"
-            src="/website1.jpg"
+            src="/website1.webp"
             alt="website section"
+          /> */}
+          <Image
+            className="websiteImage img-fluid"
+            src="/website1.webp"
+            alt="website section"
+            width={98}
+            height={98}
+            placeholder="blur"
+            blurDataURL="/seo4.webp"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+            style={{ borderRadius: "50px", objectFit: "cover" }}
+            quality={75}
           />
         </div>
       </div>
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 text-center">
-          <img
+          {/* <img
             className="websiteImage img-fluid"
-            src="/website2.jpg"
+            src="/website2.webp"
             alt="website section"
+          /> */}
+          <Image
+            className="websiteImage img-fluid"
+            src="/website2.webp"
+            alt="website section"
+            width={98}
+            height={98}
+            placeholder="blur"
+            blurDataURL="/seo4.webp"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+            style={{ borderRadius: "50px", objectFit: "cover" }}
+            quality={75}
           />
         </div>
         <div className="col-10 col-md-5 d-flex flex-column justify-content-center">
-          <h1 className="card-tittle"><span><i className="fa-solid fa-laptop" style={{marginRight:"10px"}}></i></span>Frontend Development</h1>
+          <h1 className="card-tittle"><span><i className="fa-solid fa-laptop" style={{ marginRight: "10px" }}></i></span>Frontend Development</h1>
           <p className="font">
             Convert design into code using HTML, CSS, JavaScript, or modern
             frameworks like React/Next.js.
           </p>
           <ul className="font">
 
-          <li>Code layout with semantic HTML</li>
-          <li>CSS Modules / Tailwind for styling</li>
-          <li>Implement animations and responsiveness</li>
-          <li>Component-based structure (for React/Next)</li>
+            <li>Code layout with semantic HTML</li>
+            <li>CSS Modules / Tailwind for styling</li>
+            <li>Implement animations and responsiveness</li>
+            <li>Component-based structure (for React/Next)</li>
           </ul>
           <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
         </div>
@@ -173,9 +210,9 @@ export default function CardsSection() {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 d-flex flex-column justify-content-center">
-          <h1 className="card-tittle"><span><i className="fa-brands fa-quinscape" style={{marginRight:"10px"}}></i></span>APi Implementation</h1>
+          <h1 className="card-tittle"><span><i className="fa-brands fa-quinscape" style={{ marginRight: "10px" }}></i></span>APi Implementation</h1>
           <p className="font">
-           We integrate third-party APIs (payment gateways, CRMs, social logins, etc.) to enhance functionality and streamline workflows.
+            We integrate third-party APIs (payment gateways, CRMs, social logins, etc.) to enhance functionality and streamline workflows.
           </p>
           <ul className="font" >
             <li>Real-time syncing </li>
@@ -184,15 +221,26 @@ export default function CardsSection() {
           <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
         </div>
         <div className="col-10 col-md-5 text-center">
-          <img
+          {/* <img
             className="websiteImage img-fluid"
-            src="/website3.jpg"
+            src="/website3.webp"
             alt="website section"
+          /> */}
+          <Image
+            className="websiteImage img-fluid"
+            src="/website3.webp"
+            alt="website section"
+            width={98}
+            height={98}
+            placeholder="blur"
+            blurDataURL="/seo4.webp"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+            style={{ borderRadius: "50px", objectFit: "cover" }}
+            quality={75}
           />
         </div>
       </div>
 
-     {/* <Background/> */}
     </>
   );
 }

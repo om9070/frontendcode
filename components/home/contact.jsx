@@ -45,9 +45,6 @@ export default function Contact() {
                             <div className="col-md-2">
                                 <div className="right_conatct_social_icon d-flex align-items-end">
                                    <div className="socil_item_inner d-flex">
-                                      {/* <li><a href="#"><i className="fab fa-facebook-square"></i></a></li>
-                                      <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                      <li><a href="#"><i className="fab fa-twitter"></i></a></li> */}
                                    </div>
                                 </div>
                             </div>

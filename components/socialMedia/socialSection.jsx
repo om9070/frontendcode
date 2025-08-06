@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "@/components/loadManagement/Load.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SocialSection() {
-
-  const metaname = ["FACEBOOK ADS PROMOSTION", "INSTAGRAM ADS PROMOSTION", "GOOGLE ADS PROMOSTION"]
+  const metaname = [
+    "FACEBOOK ADS PROMOSTION",
+    "INSTAGRAM ADS PROMOSTION",
+    "GOOGLE ADS PROMOSTION",
+  ];
   return (
     <>
       <div className="my-5 multipleimagesection">
@@ -29,69 +33,139 @@ export default function SocialSection() {
             </p>
           </div>
           <div className="col-md-8 manageimage">
-            <img
-              src="/digital/digital3.jpg"
+            {/* <img
+              src="/digital/digital3.webp"
+              alt="imagesection"
               width={250}
               height={250}
+            /> */}
+            {/* <img
+              src="/ads/ads8.webp"
               alt="imagesection"
-            />
-            <img
-              src="/ads/ads8.jpg"
               width={250}
               height={250}
+            /> */}
+            {/* <img
+              src="/digital/digital4.webp"
               alt="imagesection"
-            />
-            <img
-              src="/digital/digital4.jpg"
               width={250}
               height={250}
+            /> */}
+
+            {/* <img
+              src="/ads/ads7.webp"
               alt="imagesection"
+              width={250}
+              height={250}
+            /> */}
+
+            {/* <img
+              src="/digital/digital5.webp"
+              alt="imagesection"
+              width={250}
+              height={250}
             />
 
             <img
-              src="/ads/ads7.jpg"
+              src="/ads/ads9.webp"
+              alt="imagesection"
               width={250}
               height={250}
+            /> */}
+
+            <Image
+              src="/digital/digital5.webp"
               alt="imagesection"
+              width={250}
+              height={250}
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
+            />
+            <Image
+              src="/ads/ads9.webp"
+              alt="imagesection"
+              width={250}
+              height={250}
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
             />
 
-            <img
-              src="/digital/digital5.jpg"
+            <Image
+              src="/digital/digital3.webp"
+              alt="imagesection"
               width={250}
               height={250}
-              alt="imagesection"
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
             />
-
-            <img
-              src="/ads/ads9.jpeg"
+            <Image
+              src="/ads/ads8.webp"
+              alt="imagesection"
               width={250}
               height={250}
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
+            />
+            <Image
+              src="/digital/digital4.webp"
               alt="imagesection"
+              width={250}
+              height={250}
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
+            />
+            <Image
+              src="/ads/ads7.webp"
+              alt="imagesection"
+              width={250}
+              height={250}
+              placeholder="blur"
+              blurDataURL="/seo4.webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              style={{ objectFit: "cover" }}
+              quality={75}
             />
           </div>
         </div>
       </div>
 
-
       {/* icon text */}
       <div>
-
-        <h1 className="card-tittle text-center my-4 font fs-1">SOCIAL MEDIA PROMOTION</h1>
+        <h1 className="card-tittle text-center my-4 font fs-1">
+          SOCIAL MEDIA PROMOTION
+        </h1>
         <div className="addsection">
-          {
-            metaname.map((data, index) => {
-              return (
-                <div className="boxAds" key={index}>
-                  <i className={`fa-brands fa-${data.split(" ")[0].toLocaleLowerCase()}`}></i>
-                  <h1 className="text-center font" style={{ color: "#a4ccd9" }}>{data}</h1>
-                </div>
-
-              )
-            })
-          }
+          {metaname.map((data, index) => {
+            return (
+              <div className="boxAds" key={index}>
+                <i
+                  className={`fa-brands fa-${data
+                    .split(" ")[0]
+                    .toLocaleLowerCase()}`}
+                ></i>
+                <h1 className="text-center font" style={{ color: "#a4ccd9" }}>
+                  {data}
+                </h1>
+              </div>
+            );
+          })}
         </div>
       </div>
-
 
       {/* facebook instagram google */}
       <div>
@@ -99,10 +173,22 @@ export default function SocialSection() {
           <div className={styles.container}>
             {/* Left - Images */}
             <div className={styles.images}>
-              <img
-                src="/ads/ads11.jpeg"
+              {/* <img
+                src="/ads/ads11.webp"
                 alt="Image 2"
                 className={`${styles.image} imagesec`}
+              /> */}
+              <Image
+                src="/ads/ads11.webp"
+                alt="Image 2"
+                className={`${styles.image} imagesec`}
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
               />
             </div>
 
@@ -121,7 +207,9 @@ export default function SocialSection() {
                 the right time — maximizing visibility, engagement, and leads
                 within your desired area.
               </p>
-            <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
+              <Link href="/contact" className="btn btn-info font">
+                Let's Connect
+              </Link>
             </div>
           </div>
         </section>
@@ -145,11 +233,29 @@ export default function SocialSection() {
                 or lead generation — we deliver scroll-stopping content with
                 measurable impact.
               </p>
-            <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
+              <Link href="/contact" className="btn btn-info font">
+                Let's Connect
+              </Link>
             </div>
             {/* Left - Images */}
             <div className={`${styles.images} imagesec`}>
-              <img src="/ads/ads10.jpeg" alt="Image 2" className={styles.image} />
+              {/* <img
+                src="/ads/ads10.webp"
+                alt="Image 2"
+                className={styles.image}
+              /> */}
+              <Image
+                src="/ads/ads10.webp"
+                alt="Image 2"
+                className={styles.image}
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
+              />
             </div>
           </div>
         </section>
@@ -158,10 +264,22 @@ export default function SocialSection() {
           <div className={styles.container}>
             {/* Left - Images */}
             <div className={styles.images}>
-              <img
-                src="/ads/ads6.png"
+              {/* <img
+                src="/ads/ads6.webp"
                 alt="Image 2"
                 className={`${styles.image} imagesec`}
+              /> */}
+              <Image
+                src="/ads/ads6.webp"
+                alt="Image 2"
+                className={`${styles.image} imagesec`}
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
               />
             </div>
 
@@ -180,7 +298,9 @@ export default function SocialSection() {
                 qualified traffic, generate leads, and maximize ROI with clear,
                 measurable results.
               </p>
-            <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
+              <Link href="/contact" className="btn btn-info font">
+                Let's Connect
+              </Link>
             </div>
           </div>
         </section>

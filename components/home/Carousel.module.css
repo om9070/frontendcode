@@ -33,26 +33,17 @@
 }
 
 .header {
-  /* font-size: 8rem;
-  margin-bottom: 10px;
+  font-size: 6rem;
   font-weight: bold;
-  color: #c4e1e6;
-  font-family: "Oswald", sans-serif; */
-
-
-
-font-size: 6rem;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background: linear-gradient(90deg, #00dbde, #fc00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -4px;
   opacity: 0;
   animation: enterSmooth 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards,
-             softGlow 3s ease-in-out infinite alternate;
+    softGlow 3s ease-in-out infinite alternate;
 }
-
 
 /* Smooth entry animation */
 @keyframes enterSmooth {
@@ -78,11 +69,9 @@ font-size: 6rem;
   }
 }
 
-
-
 .description {
   font-size: 2rem;
-  color: #0ABAB5;
+  color: #0abab5;
   font-family: "Oswald", sans-serif;
   text-decoration: underline;
 }

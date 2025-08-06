@@ -3,10 +3,6 @@ import React from 'react'
 export default function Footer() {
     return (
         <>
-            {/* <!-- <main style="min-height: 100vh;">
-        <!-- Votre contenu ici -->
-    </main> --> */}
-
             <footer id="footer">
                 <div className="container">
                     <div className="footer-grid">
@@ -66,24 +62,8 @@ export default function Footer() {
                                     <span>contact@harmonie.com<br />support@harmonie.com</span>
                                 </div>
                             </div>
-
-                            {/* <div className="newsletter">
-                        <p>Abonnez-vous à notre newsletter :</p>
-                        <form className="newsletter-form">
-                            <input type="email" className="newsletter-input" placeholder="Votre email"
-                                aria-label="Votre adresse email" required/>
-                            <button type="submit" className="newsletter-btn">S'abonner</button>
-                        </form>
-                    </div> */}
                         </div>
                     </div>
-
-                    {/* <div className="copyright">
-                <p>&copy;
-                    <script>document.write(new Date().getFullYear())</script> Harmonie. Tous droits réservés. | <a
-                        href="#">Mentions légales</a> | <a href="#">Politique des cookies</a>
-                </p>
-            </div> */}
                 </div>
             </footer>
 

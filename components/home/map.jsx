@@ -12,6 +12,7 @@ export default function Map() {
                     style={{ border: "0" }}
                     allowFullScreen=""
                     loading="lazy"
+                    productionbrowsersourcemaps="true"
                 />
 
             </div>

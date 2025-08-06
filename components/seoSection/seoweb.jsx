@@ -1,8 +1,8 @@
 // SeoSection.js
 import React from "react";
 import styles from "./SeoSection.module.css";
-import Circule from "../circuleSection/circule";
 import Link from "next/link";
+import Image from "next/image";
 
 const SeoSection = () => {
   return (
@@ -24,10 +24,22 @@ const SeoSection = () => {
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <div className={styles.imageContainer}>
-                <img
-                  src="/seo5.jpg"
+                {/* <img
+                  src="/seo5.webp"
                   alt="Professional mechanic"
                   className={styles.serviceImage}
+                /> */}
+                <Image
+                  src="/seo5.webp"
+                  alt="Professional mechanic"
+                  className={styles.serviceImage}
+                  width={98}
+                  height={98}
+                  placeholder="blur"
+                  blurDataURL="/seo4.webp"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  quality={75}
                 />
               </div>
               <div className={styles.cardContent}>
@@ -56,10 +68,22 @@ const SeoSection = () => {
 
             <div className={styles.serviceCard}>
               <div className={styles.imageContainer}>
-                <img
-                  src="/seo1.jpg"
+                {/* <img
+                  src="/seo1.webp"
                   alt="Tire service"
                   className={styles.serviceImage}
+                /> */}
+                <Image
+                  src="/seo1.webp"
+                  alt="Tire service"
+                  className={styles.serviceImage}
+                  width={98}
+                  height={98}
+                  placeholder="blur"
+                  blurDataURL="/seo4.webp"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  quality={75}
                 />
               </div>
             </div>
@@ -88,10 +112,22 @@ const SeoSection = () => {
 
             <div className={styles.serviceCard}>
               <div className={styles.imageContainer}>
-                <img
-                  src="/seo6.jpg"
+                {/* <img
+                  src="/seo6.webp"
                   alt="Quality service tools"
                   className={styles.serviceImage}
+                /> */}
+                <Image
+                  src="/seo6.webp"
+                  alt="Quality service tools"
+                  className={styles.serviceImage}
+                  width={98}
+                  height={98}
+                  placeholder="blur"
+                  blurDataURL="/seo4.webp"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  quality={75}
                 />
               </div>
             </div>
@@ -122,8 +158,8 @@ const SeoSection = () => {
       <div className="row my-4 mx-auto align-items-center justify-content-center backgourdImage">
         <div className="col-10 col-md-6 d-flex flex-column justify-content-center">
           <h1 className="card-tittle">
-            <span style={{ marginRight: "8px",color:"blueviolet" }}>
-<i className="fa-brands fa-rev"></i>            </span>
+            <span style={{ marginRight: "8px", color: "blueviolet" }}>
+              <i className="fa-brands fa-rev"></i>            </span>
             Seo Strategy
           </h1>
           <p className=" font">
@@ -134,38 +170,42 @@ const SeoSection = () => {
             <ul className="font my-2">
               <li className="removedot">
                 <i className="fa-brands fa-battle-net"></i>
-                 We conduct detailed keyword analysis to identify terms your target audience is actively searching for, ensuring your content aligns with market demand.
+                We conduct detailed keyword analysis to identify terms your target audience is actively searching for, ensuring your content aligns with market demand.
               </li>
               <li className="removedot">
                 <i className="fa-brands fa-confluence"></i>
-                 We develop informative, keyword-focused content that engages users and strengthens your website’s authority and ranking potential.
+                We develop informative, keyword-focused content that engages users and strengthens your website’s authority and ranking potential.
               </li>
               <li className="removedot">
                 <i className="fa-brands fa-centos"></i>
-                 Through ethical outreach and partnerships, we acquire high-quality backlinks that increase your domain authority and trustworthiness.
+                Through ethical outreach and partnerships, we acquire high-quality backlinks that increase your domain authority and trustworthiness.
               </li>
               <li className="removedot">
                 <i className="fa-brands fa-magento"></i>
-                 We perform comprehensive SEO audits to uncover technical, on-page, and content-related issues, followed by clear, actionable recommendations.
+                We perform comprehensive SEO audits to uncover technical, on-page, and content-related issues, followed by clear, actionable recommendations.
 
               </li>
             </ul>
           </div>
-          {/* <div className="my-3 background">
-            <p className="font m-2">
-              We conduct detailed keyword analysis to identify terms your target
-              audience is actively searching for, ensuring your content aligns
-              with market demand.
-            </p>
-          </div> */}
-
           <Link href="/contact" className="btn w-25 btn-info">Let's Connect</Link>
         </div>
         <div className="col-10 col-md-6 text-center">
-          <img
+          {/* <img
             className="websiteImageSection"
-            src="/seo4.jpg"
+            src="/seo4.webp"
             alt="website section"
+          /> */}
+          <Image
+            className="websiteImageSection"
+            src="/seo4.webp"
+            alt="website section"
+            width={98}
+            height={98}
+            placeholder="blur"
+            blurDataURL="/seo4.webp"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+            style={{ borderRadius: "50px", objectFit: "cover" }}
+            quality={75}
           />
         </div>
       </div>{" "}
@@ -173,16 +213,28 @@ const SeoSection = () => {
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
         <div className="col-10 col-md-5 text-center">
-          <img
+          {/* <img
             className="websiteImage img-fluid"
-            src="/seo2.jpg"
+            src="/seo2.webp"
             alt="website section"
+          /> */}
+          <Image
+            className="websiteImage img-fluid"
+            src="/seo2.webp"
+            alt="website section"
+            width={98}
+            height={98}
+            placeholder="blur"
+            blurDataURL="/seo4.webp"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+            style={{ borderRadius: "50px", objectFit: "cover" }}
+            quality={75}
           />
         </div>
         <div className="col-10 col-md-5 d-flex flex-column justify-content-center">
-          <h1 className="card-tittle"><span><i className="fa-solid fa-ranking-star" style={{marginRight:"10px"}}></i></span>Backlink Building</h1>
+          <h1 className="card-tittle"><span><i className="fa-solid fa-ranking-star" style={{ marginRight: "10px" }}></i></span>Backlink Building</h1>
           <p className="font">
-           Earn high-authority backlinks through ethical outreach and content marketing to boost domain authority and rankings.
+            Earn high-authority backlinks through ethical outreach and content marketing to boost domain authority and rankings.
           </p>
           <ul className="font removedot">
             <li>🕷️ Crawlability & Indexing Improvements</li>

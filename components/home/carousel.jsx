@@ -1,7 +1,8 @@
 "use client"; // If using Next.js 13+
 
 import { useState } from "react";
-import styles from "@/components/home/Carousel.module.css";
+import styles from "./Carousel.module.css";
+import Image from "next/image";
 
 const Carousel = () => {
   const media = [
@@ -13,7 +14,7 @@ const Carousel = () => {
     },
     {
       type: "image",
-      src: "/coding.jpg",
+      src: "/coding.webp",
       title: "One Chance Must Improve Your Bussiness",
       description: "The Good Work Takes Time.",
     }
@@ -29,9 +30,20 @@ const Carousel = () => {
   return (
     <div className={styles.container} onClick={handleNext}>
       {current.type === "image" ? (
-        <img src={current.src} alt={current.title} className={styles.media} />
+        <div style={{ position: 'relative', width: '100%', height: 'auto', aspectRatio: '2 / 1' }}>
+          <Image
+            src={current.src}
+            alt="Hero Banner"
+            fill
+            priority
+            style={{ objectFit: 'cover' }}
+            loading="lazy"
+            quality={75}
+          />
+        </div>
+
       ) : (
-        <video src={current.src} className={styles.media} autoPlay muted loop />
+        <video src={current.src} className={styles.media} autoPlay muted loop   loading="lazy" priority="true"/>
       )}
       <div className={styles.overlay}>
         <h1 className={styles.header}>{current.title}</h1>

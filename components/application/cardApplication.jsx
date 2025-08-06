@@ -1,18 +1,27 @@
 import React from "react";
 import styles from "./EventPlanningUI.module.css";
-import Circule from "../circuleSection/circule";
+// import Circule from "../circuleSection/circule";
 import Link from "next/link";
+import LoadingSpinner from "@/app/loading";
+import dynamic from "next/dynamic";
+
+const Circule = dynamic(
+  () => import("../circuleSection/circule"),
+  {
+    loading: () => <LoadingSpinner />,
+  }
+);
 
 // import { Heart, Users, Cake } from 'lucide-react';
 
 export default function CardApplication() {
   return (
     <>
-      
 
 
-          <Circule/>
-      
+
+      <Circule />
+
 
       <div className={styles.container}>
         {/* Background Image */}

@@ -1,6 +1,6 @@
 .section-hero {
   padding: 8.4rem 0 9.6rem 0;
-  background-image: url("/website-bg.png"); /* replace with your image or remove */
+  background-image: url("/website-bg.webp"); /* replace with your image or remove */
   background-size: cover;
   background-position: center;
     animation: slideFromTop 1.5s ease-out forwards;

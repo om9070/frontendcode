@@ -65,17 +65,7 @@
     line-height: 28px;
     padding-bottom: 10px;
 }
-/* .contentRight .content a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 13px 30px;
-    color: #fff;
-    background: #d35400;
-    border-radius: 8px;
-    user-select: none;
-} */
+
 @media(max-width: 768px){
     .container{
         grid-template-columns: 1fr;

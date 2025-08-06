@@ -1,112 +1,23 @@
-.secondsection {
-  /* width: 85%;
-    margin: auto;
-    margin-bottom: 2rem;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  background: radial-gradient(
-        rgba(76, 76, 76, 1) 4%,
-        rgba(61, 61, 61, 1) 9%,
-        rgba(61, 61, 61, 0) 9%
-      )
-      0 0,
-    radial-gradient(
-        rgba(76, 76, 76, 1) 4%,
-        rgba(61, 61, 61, 1) 8%,
-        rgba(61, 61, 61, 0) 10%
-      )
-      50px 50px,
-    radial-gradient(rgba(76, 76, 76, 0.8) 20%, rgba(61, 61, 61, 0)) 50px 0,
-    radial-gradient(rgba(76, 76, 76, 0.8) 20%, rgba(61, 61, 61, 0)) 0 50px,
-    radial-gradient(rgba(61, 61, 61, 1) 35%, rgba(61, 61, 61, 0) 60%) 50px 0,
-    radial-gradient(rgba(61, 61, 61, 1) 35%, rgba(61, 61, 61, 0) 60%) 100px 50px,
-    radial-gradient(rgba(53, 53, 53, 0.7), rgba(61, 61, 61, 0)) 0 0,
-    radial-gradient(rgba(53, 53, 53, 0.7), rgba(61, 61, 61, 0)) 50px 50px,
-    linear-gradient(
-        45deg,
-        rgba(61, 61, 61, 0) 49%,
-        rgba(0, 0, 0, 1) 50%,
-        rgba(61, 61, 61, 0) 70%
-      )
-      0 0,
-    linear-gradient(
-        -45deg,
-        rgba(61, 61, 61, 0) 49%,
-        rgba(0, 0, 0, 1) 50%,
-        rgba(61, 61, 61, 0) 70%
-      )
-      0 0;
-  background-color: rgba(61, 61, 61, 1);
-  background-size: 100px 100px; */
 
-  width: 85%;
-  margin: auto;
-  margin-bottom: 2rem;
-  height: 500px;
+.mainSection {
+  position: relative;
+}
+.upperSection {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(
-        rgb(33 88 134) 4%,
-        rgb(54 89 106) 9%,
-        rgba(61, 61, 61, 0) 9%
-      )
-      0 0,
-    radial-gradient(
-        rgb(49 111 122) 4%,
-        rgb(137 180 190) 8%,
-        rgba(61, 61, 61, 0) 10%
-      )
-      50px 50px,
-    radial-gradient(rgba(76, 76, 76, 0.8) 20%, rgba(61, 61, 61, 0)) 50px 0,
-    radial-gradient(rgba(76, 76, 76, 0.8) 20%, rgba(61, 61, 61, 0)) 0 50px,
-    radial-gradient(rgb(59 166 171) 35%, rgba(61, 61, 61, 0) 60%) 50px 0,
-    radial-gradient(rgb(51 158 151) 35%, rgba(61, 61, 61, 0) 60%) 100px 50px,
-    radial-gradient(rgb(139 153 44 / 70%), rgba(61, 61, 61, 0)) 0 0,
-    radial-gradient(rgba(53, 53, 53, 0.7), rgba(61, 61, 61, 0)) 50px 50px,
-    linear-gradient(
-        45deg,
-        rgba(61, 61, 61, 0) 49%,
-        rgb(180 112 112) 50%,
-        rgba(61, 61, 61, 0) 70%
-      )
-      0 0,
-    linear-gradient(
-        -45deg,
-        rgba(61, 61, 61, 0) 49%,
-        rgba(0, 0, 0, 1) 50%,
-        rgb(143 109 139 / 0%) 70%
-      )
-      0 0;
-  background-color: #00dbde;
-  background-size: 100px 100px;
-  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
 }
-
-
-.mainSection{
-    position: relative;
-    
+.box {
+  position: relative;
+  width: 35%;
+  height: 200px;
+  object-fit: cover;
 }
-.upperSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin: 2rem auto;
+.imageUpper {
+  position: relative;
 }
-.box{
-     position: relative;
-    width: 35%;
-    height: 200px;
-    object-fit:cover ;
-}
-.imageUpper{
-    position: relative;
-}
-
 
 .imagesec {
   position: relative;
@@ -122,17 +33,17 @@
   transform: scale(1.05); /* Zoom in slightly on hover */
 }
 
-.imagedown{
-    position: relative;
-    width: 30%;
-    height: 200px;
-    object-fit:cover ;
-    margin: auto;
-    top: -150px;
+.imagedown {
+  position: relative;
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+  top: -150px;
 }
 
-.lowercontent{
-    text-align: center;
-    width: 80%;
-    margin: 6rem auto;
+.lowercontent {
+  text-align: center;
+  width: 80%;
+  margin: 6rem auto;
 }

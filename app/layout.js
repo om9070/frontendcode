@@ -2,6 +2,16 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/home/navbar";
 import Footer from "@/components/home/footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import { Oswald } from 'next/font/google';
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'], // or just the ones you use
+  display: 'swap',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,30 +32,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-          integrity="sha512-..."
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiasedcss`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiasedcss ${oswald.className}`}
       >
         <Navbar/>
         {children}

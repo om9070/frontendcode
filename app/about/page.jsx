@@ -1,10 +1,17 @@
-import AboutSection from '@/components/about/about'
-import React from 'react'
+import dynamic from 'next/dynamic';
+import React, { Suspense } from 'react'
+import LoadingSpinner from '../loading';
+const AboutSection = dynamic(() => import('@/components/about/about'), {
+  loading: () => <p>Loading...</p>,
+});
+
 
 export default function About() {
   return (
     <>
-    <AboutSection/>
+      <Suspense fallback={<LoadingSpinner/>}>
+        <AboutSection />
+      </Suspense>
     </>
   )
 }

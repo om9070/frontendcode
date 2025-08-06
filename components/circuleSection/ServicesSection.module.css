@@ -125,26 +125,26 @@
   bottom: 0;
   right: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%);
-  background: url("/app1.jpg") no-repeat center / cover;
+  background: url("/app1.webp") no-repeat center / cover;
 }
 
 .circle2 {
   bottom: 0;
   left: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%);
-  background: url("/apprnd2.jpg") no-repeat center / cover;
+  background: url("/apprnd2.webp") no-repeat center / cover;
 }
 
 .circle3 {
   top: 0;
   right: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%);
-  background: url("/app3.jpg") no-repeat center / cover;
+  background: url("/app3.webp") no-repeat center / cover;
 }
 
 .circle4 {
   top: 0;
   left: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
-  background: url("/apprnd4.jpg") no-repeat center / cover;
+  background: url("/apprnd4.webp") no-repeat center / cover;
 }

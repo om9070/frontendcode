@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./SectionA.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SectionA() {
   return (
@@ -9,16 +10,64 @@ export default function SectionA() {
         <div className={style.contentLeft}>
           <div className={style.row}>
             <div className={style.imgWrapper}>
-              <img src="/digital/digital1.jpg" alt="digital" />
+              {/* <img src="/digital/digital1.webp" alt="digital" /> */}
+              <Image
+                src="/digital/digital1.webp"
+                alt="digital"
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
+              />
             </div>
             <div className={style.imgWrapper}>
-              <img src="/digital/digital2.jpg" alt="digital2" />
+              {/* <img src="/digital/digital2.webp" alt="digital2" /> */}
+              <Image
+                src="/digital/digital2.webp"
+                alt="digital2"
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
+              />
             </div>
             <div className={style.imgWrapper}>
-              <img src="/digital/digital10.jpg" alt="digital10" />
+              <img src="/digital/digital10.webp" alt="digital10" />
+              <Image
+                // src={testimonials[currentSlide].image}
+                // className={!isAnimating ? "zoom-in" : ""}
+                // alt="Customer Feedback"
+
+                src="/digital/digital10.webp"
+                alt="digital10"
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
+              />
             </div>
             <div className={style.imgWrapper}>
-              <img src="/digital/digital4.jpg" alt="digital4" />
+              {/* <img src="/digital/digital4.webp" alt="digital4" /> */}
+              <Image
+                src="/digital/digital4.webp"
+                alt="digital4"
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
+              />
             </div>
           </div>
         </div>
@@ -42,7 +91,9 @@ export default function SectionA() {
               core of everything we do lies a simple mission: Attract. Engage.
               Convert. Grow.
             </p>
-            <Link href="/contact" className="btn btn-info font">Let's Connect</Link>
+            <Link href="/contact" className="btn btn-info font">
+              Let's Connect
+            </Link>
           </div>
         </div>
       </div>

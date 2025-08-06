@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from "@/components/home/Services.module.css";
-// import styles from './Services.module.css'; // import the CSS module
 
 export default function Services() {
   const sectionRef = useRef(null);

@@ -1,92 +1,6 @@
-// 'use client'; // if using Next.js app directory
-
-// import { useEffect, useRef, useState } from 'react';
-// import styles from './Review.module.css';
-
-// const testimonials = [
-//   {
-//     name: 'Linda Larson',
-//     role: 'India',
-//     quote: 'Their team built our website exactly as we imagined—clean, fast, and mobile-friendly. We’ve seen a big jump in traffic and engagement!.',
-//     img: 'client1.jpg',
-//   },
-//   {
-//     name: 'Joe Charlescraft',
-//     role: 'India',
-//     quote:"Excellent app development service! They were responsive, skilled, and delivered on time. Highly recommended.",
-//         img: 'client2.jpg',
-//   },
-// ];
-
-// export default function Review() {
-//   const [index, setIndex] = useState(0);
-
-//   const handleNext = () => {
-//     setIndex((prev) => (prev + 1) % testimonials.length);
-//   };
-
-//   const handlePrev = () => {
-//     setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-//   };
-
-//   const { name, role, quote, img } = testimonials[index];
-
-//     const sectionRef = useRef(null);
-//     const [visible, setVisible] = useState(false);
-
-//     useEffect(() => {
-//       const observer = new IntersectionObserver(
-//         ([entry]) => {
-//           if (entry.isIntersecting) {
-//             setVisible(true);
-//           }
-//         },
-//         { threshold: 0.1 }
-//       );
-
-//       if (sectionRef.current) observer.observe(sectionRef.current);
-
-//       return () => {
-//         if (sectionRef.current) observer.unobserve(sectionRef.current);
-//       };
-//     }, []);
-
-//   return (
-//     <>
-//     <p className='HeadingAction color my-4 text-center'>Client Review</p>
-
-//     <div ref={sectionRef} className={`${styles.wrapper} animateOnScrollLeft ${visible?"visible":""}`}>
-//       <button onClick={handlePrev} className={styles.navBtn}>‹</button>
-
-//       <div className={styles.content}>
-//         <img src={img} alt={name} className={styles.image} />
-
-//         <div className={styles.text}>
-//           <h3>
-//             {name}, <span className={styles.role}>{role}</span>
-//           </h3>
-//           <p className={styles.quote}>{quote}</p>
-//           {/* <button className={styles.readMore}>read more</button> */}
-//         </div>
-//       </div>
-
-//       <button onClick={handleNext} className={styles.navBtn}>›</button>
-
-//       <div className={styles.dots}>
-//         {testimonials.map((_, i) => (
-//           <span
-//           key={i}
-//           className={`${styles.dot} ${i === index ? styles.active : ''}`}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//     </>
-//   );
-// }
-
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const TestimonialSlider = () => {
@@ -97,26 +11,24 @@ const TestimonialSlider = () => {
     {
       id: 1,
       name: "Rakhi",
-      image: "/client1.jpg",
+      image: "/client1.webp",
       rating: 5,
       text: "Their team built our website exactly as we imagined—clean, fast, and mobile-friendly. We’ve seen a big jump in traffic and engagement!.",
     },
     {
       id: 2,
       name: "Aman",
-      image:
-        "client2.jpg",
+      image: "/client2.webp",
       rating: 4,
       text: "Excellent app development service! They were responsive, skilled, and delivered on time. Highly recommended.",
     },
     {
       id: 3,
       name: "Sujata",
-      image:
-        "/apprnd2.jpg",
+      image: "/apprnd2.webp",
       rating: 5,
       text: "Working with their team was a fantastic experience. The software engineers understood our vision clearly and turned it into a fully functional product. They followed our guidance at every step and delivered the project on time with outstanding quality. Highly recommended .",
-    }
+    },
   ];
 
   const nextSlide = () => {
@@ -482,7 +394,7 @@ const TestimonialSlider = () => {
         }
 
         /* RESPONSIVE */
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
           .feedback-slider-item:after {
             left: 30px;
             right: 30px;
@@ -521,7 +433,7 @@ const TestimonialSlider = () => {
           }
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
           .owl-dots {
             display: none;
           }
@@ -544,11 +456,19 @@ const TestimonialSlider = () => {
           <div className="feedback-slider">
             {/* Main Slider */}
             <div className="feedback-slider-item">
-              <img
+              <Image
                 src={testimonials[currentSlide].image}
                 className={!isAnimating ? "zoom-in" : ""}
                 alt="Customer Feedback"
+                width={98}
+                height={98}
+                placeholder="blur"
+                blurDataURL="/seo4.webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                style={{ borderRadius: "50px", objectFit: "cover" }}
+                quality={75}
               />
+
               <h3 className={`customer-name ${!isAnimating ? "fade-in" : ""}`}>
                 {testimonials[currentSlide].name}
               </h3>
@@ -564,10 +484,17 @@ const TestimonialSlider = () => {
             {/* Side Thumbnails */}
             <div className="feedback-slider-thumb">
               <div className="thumb-prev" onClick={prevSlide}>
-                <img
+                <Image
                   src={testimonials[getPrevIndex()].image}
                   className={!isAnimating ? "zoom-in" : ""}
                   alt="Previous Customer"
+                  width={98}
+                  height={98}
+                  placeholder="blur"
+                  blurDataURL="/low-quality-preview.jpg"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  quality={75}
                 />
                 <span className="customer-rating">
                   {testimonials[getPrevIndex()].rating}
@@ -575,11 +502,19 @@ const TestimonialSlider = () => {
                 </span>
               </div>
               <div className="thumb-next" onClick={nextSlide}>
-                <img
+                <Image
                   src={testimonials[getNextIndex()].image}
                   className={!isAnimating ? "zoom-in" : ""}
-                  alt="Next Customer"
+                  alt="Previous Customer"
+                  width={98}
+                  height={98}
+                  placeholder="blur"
+                  blurDataURL="/low-quality-preview.jpg"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  quality={75}
                 />
+
                 <span className="customer-rating">
                   {testimonials[getNextIndex()].rating}
                   <i></i>

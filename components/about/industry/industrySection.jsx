@@ -1,18 +1,6 @@
 import styles from './Industries.module.css';
 import Image from 'next/image';
-import { 
-  Heart, 
-  ShoppingCart, 
-  GraduationCap, 
-  Zap, 
-  Home, 
-  Plane, 
-  Video,
-  Store,
-  Network,
-  Factory,
-  Truck
-} from 'lucide-react';
+
 
 const industries = [
   { name: 'Healthcare', icon:<i className="fa-solid fa-hospital"></i> },
@@ -32,7 +20,7 @@ export default function Industries() {
   return (
     <section className={styles.container}>
       <div className={styles.leftImage}>
-        <Image src="/global.jpeg" alt="Globe" width={600} height={600} />
+        <Image src="/global.webp" alt="Globe" width={600} height={600} loading='lazy' quality={75} />
       </div>
 
       <div className={styles.rightContent}>
