@@ -117,7 +117,7 @@ export default function BlogSection() {
   Blog content optimization extends far beyond keyword inclusion to encompass reader engagement factors, dwell time optimization, and conversion-focused content structures. You'll learn headline formulas that increase click-through rates by 73%, introduction techniques that reduce bounce rates, and call-to-action strategies that convert readers into leads and customers without appearing overly promotional.
   Multi-format content creation strategies cover video content production, podcast development, infographic design, interactive content creation, and repurposing techniques that maximize content ROI by adapting single pieces of content across multiple channels and formats. Real-world examples demonstrate how companies like HubSpot and Neil Patel transform blog posts into video series, podcasts, social media campaigns, and email sequences.
   Content distribution strategies reveal how to amplify content reach through organic social media, email marketing integration, influencer partnerships, and community engagement. The guide covers platform-specific# Blog Post Titles and Descriptions for IT Company.`,
-      image: "/app1.jpg",
+      image: "/app1.webp",
     },
     {
       id: 8,
