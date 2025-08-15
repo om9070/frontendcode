@@ -1,5 +1,6 @@
 import React from 'react'
 import Contact from '../home/contact'
+import Email from '../home/email'
 
 export default function ContactSection() {
   return (
@@ -14,6 +15,7 @@ export default function ContactSection() {
           <h1 className='font'>Don't think too much — we develop your website within your budget.</h1>
         </div>
         <Contact/>
+        <Email/>
         
     </>
   )

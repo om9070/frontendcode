@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -7,39 +8,33 @@ export default function Footer() {
                 <div className="container">
                     <div className="footer-grid">
                         <div className="footer-column">
-                            <h3>Harmonie</h3>
-                            <h5 className='dec-foot'>Notre mission est d'apporter paix et sérénité dans votre vie quotidienne grâce à des solutions de
-                                bien-être innovantes.</h5>
+                            <h3 className='font'>InExpensive Code</h3>
+                            <h5 className='dec-foot'>We are a passionate team of innovators, developers, and problem-solvers dedicated to turning ideas into powerful digital solutions. From cutting-edge software development to seamless IT services, we help businesses grow, adapt, and thrive in the digital era. Our mission is simple: deliver technology that works, inspires, and drives success.</h5>
                             <div className="social-links">
-                                <a href="#" className="social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                                <a href="#" className="social-link" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-                                <a href="#" className="social-link" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-                                <a href="#" className="social-link" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-                                <a href="#" className="social-link" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
+                                <Link href="#" className="social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></Link>
+                                <Link href="#" className="social-link" aria-label="Twitter"><i className="fab fa-twitter"></i></Link>
+                                <Link href="#" className="social-link" aria-label="Instagram"><i className="fab fa-instagram"></i></Link>
+                                <Link href="#" className="social-link" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></Link>
+                                <Link href="#" className="social-link" aria-label="YouTube"><i className="fab fa-youtube"></i></Link>
                             </div>
                         </div>
 
                         <div className="footer-column">
-                            <h3>Navigation</h3>
+                            <h3 className='font'>Service</h3>
                             <ul className="footer-links">
-                                <li><a href="#">Accueil</a></li>
-                                <li><a href="#">Nos services</a></li>
-                                <li><a href="#">Méthodologie</a></li>
-                                <li><a href="#">Témoignages</a></li>
-                                <li><a href="#">Événements</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><Link href="/website">Website Develpment</Link></li>
+                                <li><Link href="/application">Application Develpment</Link></li>
+                                <li><Link href="/seo">SEO Develpment</Link></li>
+                                <li><Link href="/loadmanagement">Load Management</Link></li>
                             </ul>
                         </div>
 
                         <div className="footer-column">
-                            <h3>Support</h3>
+                            <h3 className='font'>Digital Marketing</h3>
                             <ul className="footer-links">
-                                <li><a href="#">Centre d'aide</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contactez-nous</a></li>
-                                <li><a href="#">Politique de confidentialité</a></li>
-                                <li><a href="#">CGU</a></li>
-                                <li><a href="#">Accessibilité</a></li>
+                                <li><Link href="/leadgenerater">Lead Generater</Link></li>
+                                <li><Link href="/ads">FaceBook/Instagram/Google ADS</Link></li>
+                                <li><Link href="/aiservice">Artificial Intelligence(AI)</Link></li>
                             </ul>
                         </div>
 

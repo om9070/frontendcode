@@ -73,15 +73,15 @@ const Navbar = () => {
                         <div className="header-item item-left">
                             <div className="logo">
                                 <Image
-                                    width={60}
                                     height={50}
-                                    src={"/logo.png"}
+                                    width={60}
+                                    src={"/logo1.png"}
                                     alt="logo image"
-                                    style={{ borderRadius: "30px" }}
+                                    style={{ borderRadius: "22px 38px 22px 39px" }}
                                     priority
                                 />
-                                <p style={{ paddingLeft: "1rem", margin: "0px auto" }}>
-                                    Flowbite
+                                <p style={{ paddingLeft: "1rem", margin: "0px auto",color:"white" }}>
+                                    InExpensive Code
                                 </p>{" "}
                             </div>
                         </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
                                                     </li>
                                                     <li>
                                                         <i className="fa-solid fa-person-burst"></i>
-                                                        <Link href="#">Influencer Support</Link>
+                                                        <Link href="/aiservice">Artificial Intelligence(AI)</Link>
                                                     </li>
                                                 </ul>
                                             </div>

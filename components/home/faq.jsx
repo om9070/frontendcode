@@ -64,11 +64,11 @@ export default function Faq() {
 
   return (
     <>
-      <p className="HeadingAction color my-4 text-center">
+      <p className="widthsize HeadingAction color my-4 text-center ">
         Frequently Asked Questions (FAQ)
       </p>
       <div
-        className={`faq my-4 animateOnScrollLeft ${visible ? "visible" : ""}`}
+        className={`faq my-4 animateOnScrollLeft visible`}
         ref={sectionRef}
       >
         {data.map((d, id) => {

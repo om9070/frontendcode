@@ -75,6 +75,7 @@
   max-width: 100%;
   vertical-align: top;
   height: -webkit-fill-available;
+  max-height: 155px;
 }
 
 .snip__figcaption {

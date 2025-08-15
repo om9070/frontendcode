@@ -100,7 +100,7 @@ export default function CardsSection() {
       </section>
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
-        <div className="col-10 col-md-5 text-center">
+        <div className="col-10  col-md-5 text-center">
           <Image
             className="websiteImage img-fluid"
             src="/website4.webp"
@@ -131,7 +131,7 @@ export default function CardsSection() {
       </div>
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
-        <div className="col-10 col-md-5 d-flex flex-column justify-content-center ">
+        <div className="col-10 mb-4 col-md-5 d-flex flex-column justify-content-center ">
           <h1 className="card-tittle"><span><i className="fa-solid fa-object-ungroup" style={{ marginRight: "10px" }}></i></span>Design Phase</h1>
           <p className=" font">
             Craft a visual and interactive design that is user-friendly,
@@ -194,7 +194,7 @@ export default function CardsSection() {
       </div>
 
       <div className="row my-5 mx-auto align-items-center justify-content-center ">
-        <div className="col-10 col-md-5 d-flex flex-column justify-content-center">
+        <div className="col-10 mb-4 col-md-5 d-flex flex-column justify-content-center">
           <h1 className="card-tittle"><span><i className="fa-brands fa-quinscape" style={{ marginRight: "10px" }}></i></span>APi Implementation</h1>
           <p className="font">
             We integrate third-party APIs (payment gateways, CRMs, social logins, etc.) to enhance functionality and streamline workflows.

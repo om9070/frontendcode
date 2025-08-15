@@ -33,7 +33,7 @@ const SeoSection = () => {
                   placeholder="blur"
                   blurDataURL="/seo4.webp"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  style={{ borderRadius: "0px", objectFit: "cover" }}
                   quality={75}
                 />
               </div>
@@ -72,7 +72,7 @@ const SeoSection = () => {
                   placeholder="blur"
                   blurDataURL="/seo4.webp"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  style={{ borderRadius: "0px", objectFit: "cover" }}
                   quality={75}
                 />
               </div>
@@ -111,7 +111,7 @@ const SeoSection = () => {
                   placeholder="blur"
                   blurDataURL="/seo4.webp"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                  style={{ borderRadius: "50px", objectFit: "cover" }}
+                  style={{ borderRadius: "0px", objectFit: "cover" }}
                   quality={75}
                 />
               </div>
@@ -184,7 +184,7 @@ const SeoSection = () => {
             placeholder="blur"
             blurDataURL="/seo4.webp"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-            style={{ borderRadius: "50px", objectFit: "cover" }}
+            style={{ borderRadius: "10px", objectFit: "cover" }}
             quality={75}
           />
         </div>
@@ -202,7 +202,7 @@ const SeoSection = () => {
             placeholder="blur"
             blurDataURL="/seo4.webp"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-            style={{ borderRadius: "50px", objectFit: "cover" }}
+            style={{ borderRadius: "10px", objectFit: "cover" }}
             quality={75}
           />
         </div>

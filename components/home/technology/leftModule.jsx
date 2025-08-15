@@ -117,10 +117,35 @@ export default function LeftModule() {
       title: "MeterialUI",
       text: "this is use htmlFor testing",
     },
+    {
+      image: "/firebase.webp",
+      title: "Firebase",
+      text: "",
+    },
+    {
+      image: "/java.webp",
+      title: "Java",
+      text: "",
+    },
+    {
+      image: "/mysql.webp",
+      title: "Mysql",
+      text: "",
+    },
+    {
+      image: "/spring.webp",
+      title: "Spring",
+      text: "",
+    },
+    {
+      image: "/sql.webp",
+      title: "SQL",
+      text: "",
+    }
   ];
 
   return (
-    <div className="d-flex flex-wrap justify-content-center ">
+    <div className="d-flex flex-wrap justify-content-center widthsize">
       {leftMap.map((d, i) => (
         <figure
           ref={(el) => (figuresRef.current[i] = el)}

@@ -20,7 +20,7 @@ export default function Circule() {
         Services Built Specifically for your Business
       </h1>
       <div className={styles.grid}>
-        <div className='d-flex gap-3'>
+        <div className='d-flex gap-3 flexwrap'>
 
         <div className={`${styles.card} ${styles.card1}`}>
           <div className={`${styles.circle} ${styles.circle1}`}></div>
@@ -37,7 +37,7 @@ export default function Circule() {
           </div>
         </div>
         </div>
-        <div className='d-flex gap-3'>
+        <div className='d-flex gap-3 flexwrap'>
         <div className={`${styles.card} ${styles.card3}`}>
           <div className={`${styles.circle} ${styles.circle3}`}></div>
           <div className={styles.contentRight}>

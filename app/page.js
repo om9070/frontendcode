@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import LoadingSpinner from "./loading";
+import Email from "@/components/home/email";
 
 const ActcionTItle = dynamic(() => import("@/components/home/actionTitle"), {
   loading: () => <p><LoadingSpinner/></p>,
@@ -42,6 +43,10 @@ const WorkIdea = dynamic(() => import("@/components/home/workIdea"), {
   loading: () => <p><LoadingSpinner/></p>,
 });
 
+const DevelopmentProcess = dynamic(() => import("@/components/home/DevelopmentFlow/developmentProcess"), {
+  loading: () => <p><LoadingSpinner/></p>,
+});
+
 export default function Home() {
   return (
     <>
@@ -51,12 +56,14 @@ export default function Home() {
         <ActcionTItle />
         <Technology />
         <Services />
+        <DevelopmentProcess/>
         <Faq />
         <WorkIdea />
         <Project />
         <Review />
         <Map />
         <Contact />
+        <Email/>
       </Suspense>
     </>
   );

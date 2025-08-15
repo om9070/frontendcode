@@ -271,7 +271,7 @@ export default function BlogSection() {
             />
             <h1 className="font">{data.title}</h1>
             <p className="font">{data.description}</p>
-            <button className="btn text-success " onClick={() => setlongdes(!longdes)}>read more</button>
+            <button className="btn text-success " onClick={() => setlongdes(!longdes)}>{longdes?'read less':'read more'}</button>
             {
               longdes && <p className="font my-3">{data.readmore}</p>
             }

@@ -37,13 +37,12 @@ const Carousel = () => {
             fill
             priority
             style={{ objectFit: 'cover' }}
-            loading="lazy"
             quality={75}
           />
         </div>
 
       ) : (
-        <video src={current.src} className={styles.media} autoPlay muted loop   loading="lazy" priority="true"/>
+        <video src={current.src} className={styles.media} autoPlay muted loop   loading="lazy"/>
       )}
       <div className={styles.overlay}>
         <h1 className={styles.header}>{current.title}</h1>

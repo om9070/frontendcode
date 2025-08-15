@@ -142,7 +142,7 @@ export default function SocialSection() {
                 placeholder="blur"
                 blurDataURL="/seo4.webp"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                style={{ borderRadius: "50px", objectFit: "cover" }}
+                style={{ objectFit: "cover" }}
                 quality={75}
               />
             </div>
@@ -203,7 +203,7 @@ export default function SocialSection() {
                 placeholder="blur"
                 blurDataURL="/seo4.webp"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                style={{ borderRadius: "50px", objectFit: "cover" }}
+                style={{ objectFit: "cover" }}
                 quality={75}
               />
             </div>

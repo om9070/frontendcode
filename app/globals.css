@@ -13,8 +13,13 @@ body {
 .antialiasedcss {
   max-width: 1600px !important;
   min-width: 800px !important;
-  width: 100%;
+  /* width: 100%; */
   margin: auto;
+}
+
+.widthsize {
+  min-width: 800px;
+  overflow: auto;
 }
 
 .color {
@@ -510,7 +515,7 @@ a {
 }
 
 .card-tittle {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Oswald", sans-serif;
   color: #00dbde;
 }
@@ -766,6 +771,8 @@ footer p strong {
 .contact_us {
   background-color: #f1f1f1;
   padding: 120px 0px;
+  min-width: 800px;
+  overflow: hidden;
 }
 
 .contact_inner {
@@ -1036,7 +1043,7 @@ footer::before {
 .contact-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: var(--gray);
 }
 
@@ -1256,6 +1263,9 @@ footer::before {
   .faq {
     width: 100% !important;
   }
+  .flexwrap {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1311,6 +1321,8 @@ footer::before {
 
 .faq {
   width: 50%;
+  max-width: 780px;
+  overflow: auto;
   margin: 0 auto;
   background: white;
   border-radius: 4px;
@@ -1648,6 +1660,7 @@ footer::before {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-width: 13rem;
 }
 
 .removedot {
@@ -1756,4 +1769,60 @@ footer::before {
 
 .active {
   color: #e9890d;
+}
+
+.email {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2d2d2;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.email h1 {
+  font-family: "Oswald", sans-serif;
+  color: #00dbde;
+}
+
+.email a {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  color: #0f172a;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #00dbde;
+  padding: 10px;
+  border-radius: 30px;
+  /* background-color: #0f172a; */
+}
+
+.email a:hover {
+  background-color: #9cafaf;
+  color: #e1e4e4;
+}
+
+.email i {
+  background-color: #0f172a;
+  color: #a4ccd9;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  font-size: 24px;
+  margin-right: 1rem;
+}
+
+
+.custom-icon {
+  font-size: 40px;       /* controls width/height of the icon */
+  color: #a4ccd9;          /* icon color */
+  background-color: #0f172a; /* background color */
+  padding: 20px 3px;         /* spacing inside background */
+  border-radius: 8px;    /* rounded corners */
+  width: 80px !important;
+  margin: 10px 5px;
 }
