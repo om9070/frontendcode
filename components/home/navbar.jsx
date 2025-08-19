@@ -75,13 +75,12 @@ const Navbar = () => {
                                 <Image
                                     height={50}
                                     width={60}
-                                    src={"/logo1.png"}
+                                    src={"/logo2.png"}
                                     alt="logo image"
-                                    style={{ borderRadius: "22px 38px 22px 39px" }}
                                     priority
                                 />
                                 <p style={{ paddingLeft: "1rem", margin: "0px auto",color:"white" }}>
-                                    InExpensive Code
+                                    HanuWebTechSolutions 
                                 </p>{" "}
                             </div>
                         </div>

@@ -4,10 +4,10 @@ export default function PageRoot({ children }) {
   return (
     <>
       <Head>
-        <title>Website Development Company in India | InexpensiveCode</title>
+        <title>Website Development Company in India | hanuwebtechsolutions</title>
         <meta
           name="description"
-          content="InexpensiveCode offers professional website development services in India. We build fast, responsive, and SEO-friendly websites tailored to your business needs and budget."
+          content="hanuwebtechsolutions offers professional website development services in India. We build fast, responsive, and SEO-friendly websites tailored to your business needs and budget."
         />
         <meta
           name="keywords"
@@ -16,17 +16,17 @@ export default function PageRoot({ children }) {
 
         <meta
           property="og:title"
-          content="Website Development Company in India | InexpensiveCode"
+          content="Website Development Company in India | hanuwebtechsolutions"
         />
         <meta
           property="og:description"
-          content="Get a fast, responsive, and SEO-friendly website for your business. InexpensiveCode provides affordable and custom website development services in India."
+          content="Get a fast, responsive, and SEO-friendly website for your business. hanuwebtechsolutions provides affordable and custom website development services in India."
         />
         <meta
           property="og:image"
-          content="https://inexpensivecode.com/website1.webp"
+          content="https://hanuwebtechsolutions.com/website1.webp"
         />
-        <meta property="og:url" content="https://inexpensivecode.com/website" />
+        <meta property="og:url" content="https://hanuwebtechsolutions.com/website" />
         <meta property="og:type" content="website" />
       </Head>
       {children}

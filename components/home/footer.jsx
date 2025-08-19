@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="container">
                     <div className="footer-grid">
                         <div className="footer-column">
-                            <h3 className='font'>InExpensive Code</h3>
+                            <h3 className='font'>HanuWebTechSolutions</h3>
                             <h5 className='dec-foot'>We are a passionate team of innovators, developers, and problem-solvers dedicated to turning ideas into powerful digital solutions. From cutting-edge software development to seamless IT services, we help businesses grow, adapt, and thrive in the digital era. Our mission is simple: deliver technology that works, inspires, and drives success.</h5>
                             <div className="social-links">
                                 <Link href="#" className="social-link" aria-label="Facebook"><i className="fab fa-facebook-f"></i></Link>

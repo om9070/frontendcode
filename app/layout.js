@@ -4,7 +4,6 @@ import Navbar from "@/components/home/navbar";
 import Footer from "@/components/home/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import { Oswald } from "next/font/google";
 import Head from "next/head";
 
@@ -25,9 +24,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "InExpensiveCode",
+  title: "hanuwebtechsolutions",
   description:
-    "InexpensiveCode is one of the best Bihari software companies in India, offering high-quality custom software development tailored to your budget. We build web, mobile, and digital solutions to help your business grow.",
+    "hanuwebtechsolutions is one of the best Bihari software companies in India, offering high-quality custom software development tailored to your budget. We build web, mobile, and digital solutions to help your business grow.",
 };
 
 export default function RootLayout({ children }) {
@@ -35,17 +34,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <title>
-          InexpensiveCode - Affordable Web, App & Digital Marketing Services
+          hanuwebtechsolutions - Affordable Web, App & Digital Marketing Services
         </title>
         <meta
           name="description"
-          content="InexpensiveCode is one of the best Bihari software companies in India, offering custom web, app, and digital marketing solutions within your budget."
+          content="hanuwebtechsolutions is one of the best Bihari software companies in India, offering custom web, app, and digital marketing solutions within your budget."
         />
 
         {/* Open Graph for Social Media */}
         <meta
           property="og:title"
-          content="InexpensiveCode - Affordable IT Solutions"
+          content="hanuwebtechsolutions - Affordable IT Solutions"
         />
         <meta
           property="og:description"
@@ -53,16 +52,16 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://inexpensivecode.com/coding.webp"
+          content="https://hanuwebtechsolutions.com/coding.webp"
         />
-        <meta property="og:url" content="https://inexpensivecode.com" />
+        <meta property="og:url" content="https://hanuwebtechsolutions.com" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="InexpensiveCode - Affordable IT Solutions"
+          content="hanuwebtechsolutions - Affordable IT Solutions"
         />
         <meta
           name="twitter:description"
@@ -70,11 +69,11 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://inexpensivecode.com/coding.webp"
+          content="https://hanuwebtechsolutions.com/coding.webp"
         />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://inexpensivecode.com" />
+        <link rel="canonical" href="https://hanuwebtechsolutions.com" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiasedcss ${oswald.className}`}

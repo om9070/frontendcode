@@ -6,11 +6,11 @@ export default function PageRoot({ children }) {
       <Head>
         <title>
           Load Balancing Solutions | Server Performance & Traffic Management |
-          InexpensiveCode
+          hanuwebtechsolutions
         </title>
         <meta
           name="description"
-          content="InexpensiveCode offers expert load balancing solutions to optimize server performance, manage high traffic, and ensure maximum uptime for your applications."
+          content="hanuwebtechsolutions offers expert load balancing solutions to optimize server performance, manage high traffic, and ensure maximum uptime for your applications."
         />
         <meta
           name="keywords"
@@ -19,26 +19,26 @@ export default function PageRoot({ children }) {
 
         <meta
           property="og:title"
-          content="Load Balancing Solutions | InexpensiveCode"
+          content="Load Balancing Solutions | hanuwebtechsolutions"
         />
         <meta
           property="og:description"
-          content="Improve uptime and performance with InexpensiveCode's load balancing solutions. Distribute traffic efficiently across servers and keep your apps running smoothly."
+          content="Improve uptime and performance with hanuwebtechsolutions's load balancing solutions. Distribute traffic efficiently across servers and keep your apps running smoothly."
         />
         <meta
           property="og:image"
-          content="https://inexpensivecode.com/images/load-balancing.jpg"
+          content="https://hanuwebtechsolutions.com/images/load-balancing.jpg"
         />
         <meta
           property="og:url"
-          content="https://inexpensivecode.com/loadmanagement"
+          content="https://hanuwebtechsolutions.com/loadmanagement"
         />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Load Balancing Solutions | InexpensiveCode"
+          content="Load Balancing Solutions | hanuwebtechsolutions"
         />
         <meta
           name="twitter:description"
@@ -46,7 +46,7 @@ export default function PageRoot({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://inexpensivecode.com/images/load-balancing.jpg"
+          content="https://hanuwebtechsolutions.com/images/load-balancing.jpg"
         />
       </Head>
       {children}
