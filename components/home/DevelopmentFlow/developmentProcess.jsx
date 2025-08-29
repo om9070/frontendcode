@@ -40,19 +40,19 @@ const DevelopmentProcess = () => {
       title: "CHOOSE ENGAGEMENT TERMS & TIMELINES",
       description: "Based on the project consultation provided by our experts, you can choose the engagement timelines for your project execution."
     },
-    {
-      icon: (
-        <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-          <path d="M9 9h6v6H9z"/>
-          <path d="m9 12 2 2 4-4"/>
-        </svg>
-      ),
-      title: "REVIEW AND SIGN THE PROJECT AGREEMENT",
-      description: "Formalize your project with a tailored contract, ensuring transparency and mutual commitment before project development begins."
-    }
+    // {
+    //   icon: (
+    //     <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    //       <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+    //       <line x1="8" y1="21" x2="16" y2="21"/>
+    //       <line x1="12" y1="17" x2="12" y2="21"/>
+    //       <path d="M9 9h6v6H9z"/>
+    //       <path d="m9 12 2 2 4-4"/>
+    //     </svg>
+    //   ),
+    //   title: "REVIEW AND SIGN THE PROJECT AGREEMENT",
+    //   description: "Formalize your project with a tailored contract, ensuring transparency and mutual commitment before project development begins."
+    // }
   ];
 
   return (

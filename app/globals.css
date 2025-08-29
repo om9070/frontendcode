@@ -143,10 +143,10 @@ a {
   display: block;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.2rem;
 }
 .header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
-  padding: 10px 0;
+  padding: 3px 0;
   display: inline-block;
   font-size: 20px;
   color: #a4ccd9;
@@ -515,7 +515,7 @@ a {
 }
 
 .card-tittle {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Oswald", sans-serif;
   color: #00dbde;
 }
@@ -1786,7 +1786,14 @@ footer::before {
   color: #00dbde;
 }
 
-.email a {
+
+.whatsubsec a{
+  color: #0f172a;
+  text-decoration: none;
+}
+
+
+/* .email a {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   color: #0f172a;
@@ -1795,13 +1802,12 @@ footer::before {
   border: 1px solid #00dbde;
   padding: 10px;
   border-radius: 30px;
-  /* background-color: #0f172a; */
 }
 
 .email a:hover {
   background-color: #9cafaf;
   color: #e1e4e4;
-}
+} */
 
 .email i {
   background-color: #0f172a;
@@ -1825,4 +1831,10 @@ footer::before {
   border-radius: 8px;    /* rounded corners */
   width: 80px !important;
   margin: 10px 5px;
+}
+
+
+.email i:hover{
+  color: #0f172a;   
+  background-color: #a4ccd9;
 }

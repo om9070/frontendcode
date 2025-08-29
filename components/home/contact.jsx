@@ -25,7 +25,7 @@ export default function Contact() {
   return (
     <>
      <section className="contact_us">
-        <div className="container">
+        <div className="container_sec">
             <div className="row" ref={sectionRef}>
                 <div className="col-md-10 offset-md-1">
                     <div className="contact_inner">
