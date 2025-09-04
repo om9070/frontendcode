@@ -1,6 +1,16 @@
+import LoadingSpinner from '@/app/loading';
+import dynamic from 'next/dynamic';
 import React from 'react'
-import Contact from '../home/contact'
-import Email from '../home/email'
+// import Contact from '../home/contact'
+// import Email from '../home/email'
+
+const Contact = dynamic(() => import("../home/contact"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
+const Email = dynamic(() => import("../home/email"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
 
 export default function ContactSection() {
   return (

@@ -2,10 +2,22 @@
 import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
 
-
 export default function BlogSection() {
   const [viewId, setVeiwId] = useState(1);
-  const [longdes, setlongdes] = useState(false)
+  const [longdes, setlongdes] = useState(false);
+
+  const  getPastDate=(days)=> {
+    // Create a new Date object for the current date
+    const date = new Date();
+
+    // Get the current day of the month
+    const currentDay = date.getDate();
+
+    // Subtract the specified number of days
+    date.setDate(currentDay - days);
+
+    return date;
+  }
 
   const blogPosts = [
     {
@@ -20,7 +32,7 @@ export default function BlogSection() {
   Advanced security topics include Content Security Policy (CSP) implementation, secure coding practices for different programming languages, dependency management and vulnerability scanning, and security testing methodologies including penetration testing and automated security scanning tools.
   The tutorial also addresses modern security challenges like API security, microservices security architecture, container security, and cloud security considerations. You'll learn about security monitoring, incident response planning, and how to implement security logging and alerting systems that detect and respond to threats in real-time.
   Practical implementation guides cover security frameworks, security headers, secure deployment practices, and how to create a security-first development culture within your organization. By following these proven security practices, you'll build applications that protect user data, maintain regulatory compliance, and resist both current and emerging security threats.`,
-
+      date: getPastDate(0).toDateString(),
       image: "/db2.webp",
     },
     {
@@ -35,6 +47,7 @@ export default function BlogSection() {
   Technical deep-dives examine code sharing strategies, platform-specific implementation requirements, third-party library ecosystems, and debugging workflows. Real-world case studies demonstrate how companies like Shopify successfully migrated from native to React Native, while others like Dropbox moved from cross-platform back to native solutions based on specific technical requirements.
   The guide addresses modern considerations including artificial intelligence integration, augmented reality features, advanced camera functionality, and complex animation requirements that may influence platform choice. You'll also learn about hybrid approaches where core functionality uses cross-platform frameworks while performance-critical features employ native modules.
   Team skill requirements, hiring considerations, and development timeline implications are thoroughly examined, helping you align technology choices with available resources and business objectives. By the end of this comprehensive comparison, you'll have a clear framework for making data-driven decisions that optimize for your specific project requirements, budget constraints, and long-term strategic goals.`,
+      date: getPastDate(1).toDateString(),
 
       image: "/app3.webp",
     },
@@ -51,6 +64,7 @@ export default function BlogSection() {
   The tutorial includes comprehensive coverage of Firebase integration, REST API consumption, local database implementation with SQLite and Hive, and advanced features like background processing, push notifications, and deep linking. Testing strategies cover unit testing, widget testing, and integration testing methodologies that ensure code quality and reliability.
   Performance optimization techniques reveal how to achieve optimal app performance through efficient widget building, memory management, and build optimization. You'll learn about Flutter's developer tools, debugging techniques, and profiling methods that help identify and resolve performance bottlenecks.
   Real-world deployment strategies cover app store submission processes, continuous integration/continuous deployment (CI/CD) setup, and monitoring techniques that ensure successful app launches and ongoing maintenance. By mastering these Flutter concepts and techniques, you'll be equipped to build production-ready applications that deliver exceptional user experiences across all platforms.`,
+      date: getPastDate(2).toDateString(),
 
       image: "/apprnd4.webp",
     },
@@ -68,6 +82,7 @@ export default function BlogSection() {
   Prototyping and wireframing techniques using tools like Figma, Sketch, and Adobe XD are thoroughly covered, including creating interactive prototypes that accurately represent final app behavior. You'll learn rapid prototyping methods that accelerate design iteration cycles and facilitate effective communication with development teams and stakeholders.
   Modern design trends are examined including neumorphism, glassmorphism, micro-interactions, and animation principles that enhance user delight without compromising usability. The guide also covers emerging design considerations for voice interfaces, augmented reality integration, and AI-powered personalization features.
   Performance implications of design decisions are thoroughly analyzed, including image optimization, animation performance, and design-to-development handoff processes that ensure design fidelity while maintaining optimal app performance. By mastering these mobile design principles and methodologies, you'll create user experiences that not only look beautiful but drive meaningful engagement, user satisfaction, and business success.`,
+      date: getPastDate(3).toDateString(),
 
       image: "/app4.webp",
     },
@@ -86,6 +101,7 @@ export default function BlogSection() {
   Analytics and measurement methodologies help track ASO performance using tools like App Store Connect, Google Play Console, and third-party analytics platforms. You'll learn to set up conversion tracking, monitor keyword rankings, and measure the impact of optimization efforts on download volume and user quality.
   International ASO strategies cover localization best practices, cultural considerations for different markets, and region-specific optimization techniques that can unlock new user bases and revenue streams. Real-world case studies demonstrate how apps like TikTok and Pokemon GO achieved global success through strategic ASO approaches.
   By implementing these proven ASO strategies and maintaining consistent optimization efforts, you'll significantly improve your app's discoverability, attract higher-quality users, and build sustainable organic growth that reduces long-term marketing costs while increasing user lifetime value.`,
+      date: getPastDate(4).toDateString(),
 
       image: "/app2.webp",
     },
@@ -104,6 +120,7 @@ export default function BlogSection() {
   Advanced profiling techniques using tools like React Native Performance Monitor, Chrome DevTools, and platform-specific profilers help identify bottlenecks and measure optimization impact. The guide includes real-world debugging scenarios and step-by-step optimization workflows that deliver measurable performance improvements.
   Bundle size optimization strategies cover code splitting, unused code elimination, and asset optimization techniques that reduce initial app download size and improve startup performance. You'll learn about dynamic imports, lazy loading strategies, and build optimization configurations that create lean, fast-loading applications.
   Production deployment considerations include performance monitoring implementation, crash reporting setup, and continuous performance testing workflows that maintain optimal performance across app updates and diverse device configurations. Real-world case studies from companies like Facebook, Instagram, and Discord demonstrate how proper React Native optimization delivers exceptional user experiences that rival native applications while maintaining development efficiency advantages`,
+      date: getPastDate(5).toDateString(),
 
       image: "/apprnd3.webp",
     },
@@ -118,6 +135,7 @@ export default function BlogSection() {
   Multi-format content creation strategies cover video content production, podcast development, infographic design, interactive content creation, and repurposing techniques that maximize content ROI by adapting single pieces of content across multiple channels and formats. Real-world examples demonstrate how companies like HubSpot and Neil Patel transform blog posts into video series, podcasts, social media campaigns, and email sequences.
   Content distribution strategies reveal how to amplify content reach through organic social media, email marketing integration, influencer partnerships, and community engagement. The guide covers platform-specific# Blog Post Titles and Descriptions for IT Company.`,
       image: "/app1.webp",
+      date: getPastDate(6).toDateString(),
     },
     {
       id: 8,
@@ -134,6 +152,7 @@ export default function BlogSection() {
   Local SEO automation covers Google Business Profile optimization, review management automation, and local citation building strategies that improve local search visibility. Advanced techniques include AI-powered local keyword optimization, automated local content creation, and multi-location SEO management that scales local search success across multiple business locations.
   Performance measurement and optimization using AI analytics tools reveal how to track SEO performance, identify improvement opportunities, and predict optimization impact using machine learning algorithms. The guide covers advanced attribution modeling, conversion tracking, and automated reporting systems that provide actionable insights for continuous SEO improvement.
   Future-proofing strategies explore emerging AI technologies including GPT integration, visual search optimization, and predictive SEO techniques that prepare your website for continuing evolution in search technology. Real-world case studies demonstrate how companies have successfully implemented AI-powered SEO strategies to achieve significant organic traffic growth and improved search visibility in competitive markets.`,
+      date: getPastDate(7).toDateString(),
 
       image: "/seo5.webp",
     },
@@ -152,6 +171,7 @@ export default function BlogSection() {
   Analytics and optimization methodologies cover A/B testing strategies for every email element, conversion tracking implementation, and advanced metrics analysis that goes beyond open and click rates to measure true business impact. You'll learn about email attribution modeling, lifetime value analysis, and predictive analytics that forecast subscriber behavior and optimize campaign performance.
   Compliance and privacy considerations address evolving regulations including GDPR, CCPA, and emerging privacy laws that affect email marketing practices. The guide covers consent management, data retention policies, and transparent privacy practices that build subscriber trust while maintaining regulatory compliance in an increasingly privacy-focused digital landscape.
   Future-proofing strategies explore emerging trends including voice-activated email, augmented reality integration, and blockchain-based email authentication that may reshape email marketing in coming years. Real-world case studies from various industries demonstrate successful email marketing strategies, optimization techniques, and results that provide actionable insights for businesses of all sizes and sectors.`,
+      date: getPastDate(8).toDateString(),
 
       image: "/digital/digital10.webp",
     },
@@ -170,6 +190,7 @@ export default function BlogSection() {
   Marketing automation and optimization using data insights covers dynamic campaign adjustment, automated bidding optimization, and personalization strategies that leverage analytics data to improve campaign performance continuously. Advanced topics include algorithmic optimization, automated A/B testing, and machine learning-powered campaign management that scales optimization efforts beyond human capabilities.
   ROI calculation and budget optimization methodologies help allocate marketing budgets across channels and campaigns based on actual performance data rather than assumptions or historical patterns. The guide covers multi-touch attribution implementation, media mix modeling, and incremental testing that reveals optimal budget allocation strategies for maximum marketing efficiency.
   Emerging analytics trends and future-proofing strategies explore developments in artificial intelligence, machine learning, and privacy-preserving analytics technologies that will shape marketing measurement in coming years. Real-world implementation guides help you build analytics capabilities that provide competitive advantages through superior data-driven decision making and marketing optimization.`,
+      date: getPastDate(2).toDateString(),
 
       image: "/seo4.webp",
     },
@@ -182,6 +203,7 @@ export default function BlogSection() {
   The guide covers essential PWA components including service workers for offline functionality, web app manifests for installability, and the newest APIs like Background Sync, Web Share, and Payment Request that make PWAs more powerful than ever. You'll learn about performance optimization techniques, caching strategies, and how to implement features like push notifications and background synchronization.
   We'll also explore the business benefits of PWAs, including reduced app store dependency, lower development costs compared to native apps, improved SEO performance, and better user retention rates. The tutorial includes practical code examples, deployment strategies, and testing methodologies to ensure your PWA delivers exceptional user experiences across all devices and network conditions. By the end, you'll have the knowledge to build production-ready PWAs that engage users and drive business results`,
       image: "/website3.webp",
+      date: getPastDate(9).toDateString(),
     },
     {
       id: 12,
@@ -192,6 +214,7 @@ export default function BlogSection() {
   The Flexbox section covers everything from basic flex container and item properties to advanced techniques like flex-grow calculations, alignment strategies, and common layout patterns. You'll discover how to solve age-old CSS problems like perfect centering, equal-height columns, and flexible navigation systems with elegant, modern solutions.
   Container Queries represent the future of responsive design, allowing components to adapt based on their parent container's size rather than the entire viewport. This game-changing feature enables truly modular, reusable components that work perfectly whether they're displayed in a sidebar, main content area, or modal window. The tutorial includes practical implementation examples, browser support considerations, and polyfill strategies.
   Additionally, you'll learn about CSS custom properties (variables), modern pseudo-selectors, and how to combine these technologies for maximum efficiency. The guide includes performance considerations, debugging techniques, and best practices that will elevate your frontend development skills to professional standards while reducing code complexity and maintenance overhead`,
+      date: getPastDate(11).toDateString(),
 
       image: "/seo2.webp",
     },
@@ -205,6 +228,7 @@ export default function BlogSection() {
   The guide delves deep into JavaScript and CSS optimization, including code splitting strategies, tree shaking for eliminating unused code, minification and compression techniques, and asynchronous loading patterns. Learn how to implement efficient caching strategies using service workers, HTTP caching headers, and Content Delivery Networks (CDNs) that can reduce server response times by up to 90%.
   Advanced topics include critical rendering path optimization, resource prioritization with preload and prefetch directives, database query optimization, and server-side rendering strategies. Real-world case studies demonstrate how companies like Shopify and AliExpress achieved remarkable performance improvements, including load time reductions of 70% and conversion rate increases of 15-30%.
   The tutorial also covers performance budgets, automated testing workflows, and monitoring strategies to maintain optimal performance over time. By implementing these proven techniques, you'll create web experiences that load instantly, engage users effectively, and outperform competitors in both user satisfaction and search engine visibility`,
+      date: getPastDate(12).toDateString(),
 
       image: "/seo3.webp",
     },
@@ -219,6 +243,7 @@ export default function BlogSection() {
   The tutorial also addresses common concerns including SEO implications, content editor experience, plugin ecosystems, and migration strategies from traditional CMS platforms. Security considerations are thoroughly examined, highlighting how headless architectures can reduce attack surfaces while introducing new security challenges that must be addressed.
   Business aspects include total cost of ownership analysis, vendor lock-in considerations, hosting requirements, and team skill requirements. The guide helps you evaluate factors like content workflow complexity, multi-site management needs, and internationalization requirements that influence CMS selection decisions.
   By the end of this comprehensive analysis, you'll have a clear framework for making informed CMS decisions that align with your technical capabilities, business objectives, and growth plans, ensuring your content management strategy supports both current needs and future expansion goals.`,
+      date: getPastDate(13).toDateString(),
 
       image: "/digital/digital5.webp",
     },
@@ -232,8 +257,8 @@ export default function BlogSection() {
   }, [viewId]);
 
   useEffect(() => {
-    setlongdes(false)
-  }, [viewId])
+    setlongdes(false);
+  }, [viewId]);
 
   return (
     <>
@@ -269,46 +294,57 @@ export default function BlogSection() {
               quality={75}
               priority
             />
+            <p className="m-0">{data.date}</p>
             <h1 className="font">{data.title}</h1>
             <p className="font">{data.description}</p>
-            <button className="btn text-success " onClick={() => setlongdes(!longdes)}>{longdes?'read less':'read more'}</button>
-            {
-              longdes && <p className="font my-3">{data.readmore}</p>
-            }
+            <button
+              className="btn text-success "
+              onClick={() => setlongdes(!longdes)}
+            >
+              {longdes ? "read less" : "read more"}
+            </button>
+            {longdes && <p className="font my-3">{data.readmore}</p>}
             <hr />
-            {
-              remainData.slice(3, 10).map((list, index) => {
-                return (
-                    <div className="row gap-1" key={list?.id} onClick={() => setVeiwId(list.id)}>
-                      <div className="col-md-4 ">
-                        <Image
-                          src={list.image}
-                          alt="imageround"
-                          className="imagebloglower2"
-                          width={98}
-                          height={98}
-                          placeholder="blur"
-                          blurDataURL="/seo4.webp"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                          style={{ objectFit: "cover" }}
-                          quality={75}
-                        />
-                      </div>
-                      <div className="col-md-7 d-flex align-items-start justify-content-center flex-column">
-                        <div className="my-2 ">
-                          <h5 className="font">{list.title}</h5>
-                          <button className="btn text-success " >read more</button>
-                        </div>
-                      </div>
+            {remainData.slice(3, 10).map((list, index) => {
+              return (
+                <div
+                  className="row gap-1"
+                  key={list?.id}
+                  onClick={() => setVeiwId(list.id)}
+                >
+                  <div className="col-md-4 ">
+                    <Image
+                      src={list.image}
+                      alt="imageround"
+                      className="imagebloglower2"
+                      width={98}
+                      height={98}
+                      placeholder="blur"
+                      blurDataURL="/seo4.webp"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                      style={{ objectFit: "cover" }}
+                      quality={75}
+                    />
+                  </div>
+                  <div className="col-md-7 d-flex align-items-start justify-content-center flex-column">
+                    <div className="my-2 ">
+                      <h5 className="font">{list.title}</h5>
+                      <p className="m-0">{list.date}</p>
+                      <button className="btn text-success ">read more</button>
                     </div>
-                )
-              })
-            }
+                  </div>
+                </div>
+              );
+            })}
           </div>
           <div className="col-md-3 ">
             {remainData.slice(0, 3).map((d, i) => {
               return (
-                <div className="my-2" key={d.id} onClick={() => setVeiwId(d.id)}>
+                <div
+                  className="my-2"
+                  key={d.id}
+                  onClick={() => setVeiwId(d.id)}
+                >
                   <Image
                     className="imagebloglower2"
                     src={d.image}
@@ -320,11 +356,10 @@ export default function BlogSection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                     style={{ objectFit: "cover" }}
                     quality={75}
-                    
                   />
                   <h5 className="font">{d.title}</h5>
-
-                  <button className="btn text-success" >read more</button>
+                  <p className="m-0">{d.date}</p>
+                  <button className="btn text-success">read more</button>
                 </div>
               );
             })}

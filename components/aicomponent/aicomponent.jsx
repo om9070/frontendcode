@@ -53,7 +53,7 @@ export default function Aicomponent() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div className="d-flex justify-content-end m-5">
             <div className="w-75 card p-3">
-              <i class="fa-regular fa-object-group custom-icon"></i>
+              <i className="fa-regular fa-object-group custom-icon"></i>
               <h1 className="font color my-2">Generative AI Development</h1>
               <p className="font my-2">
                 Harness the power of cutting-edge generative AI to create
@@ -67,7 +67,7 @@ export default function Aicomponent() {
           </div>
           <div className="m-5">
             <div className="w-75 card p-3">
-              <i class="fa-brands fa-bots custom-icon"></i>{" "}
+              <i className="fa-brands fa-bots custom-icon"></i>{" "}
               <h1 className="font color my-2">Intelligent Chatbot Development</h1>
               <p className="font my-2">
                 Harness the power of cutting-edge generative AI to create

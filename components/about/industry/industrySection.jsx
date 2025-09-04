@@ -20,7 +20,7 @@ export default function Industries() {
   return (
     <section className={styles.container}>
       <div className={styles.leftImage}>
-        <Image src="/global.webp" alt="Globe" width={600} height={600} loading='lazy' quality={75} />
+        <Image src="/ads/ads4.webp" alt="Globe" width={600} height={600} loading='lazy' quality={75} />
       </div>
 
       <div className={styles.rightContent}>

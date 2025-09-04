@@ -20,7 +20,7 @@ const LeadSection = dynamic(
 export default function AiService() {
   return (
     <>
-      <Suspense fallback={<p>Loading component...</p>}>
+      <Suspense fallback={<LoadingSpinner/>}>
         <LeadSection
           title={"Artificial Intelligence"}
           route={"AI Section"}

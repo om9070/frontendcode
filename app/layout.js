@@ -6,6 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Oswald } from "next/font/google";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+import LoadingSpinner from "./loading";
+
+const ChatWidget = dynamic(() => import("@/components/ChatWidget"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -81,6 +88,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <ChatWidget/>
       </body>
     </html>
   );

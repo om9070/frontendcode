@@ -14,7 +14,7 @@ export default function Email() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-whatsapp"></i>{" "}
+            <i className="fa-brands fa-whatsapp"></i>{" "}
           </a>
         </div>
       </div>

@@ -1,8 +1,24 @@
 import React from 'react'
-import IndustriesSection from './industry/industrySection'
-import Services from '../home/services'
-import Circule from '../circuleSection/circule'
-import Map from '../home/map'
+import dynamic from 'next/dynamic'
+import LoadingSpinner from '@/app/loading'
+
+
+const IndustriesSection = dynamic(() => import("./industry/industrySection"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
+const Services = dynamic(() => import("../home/services"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
+const Circule = dynamic(() => import("../circuleSection/circule"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
+const Map = dynamic(() => import("../home/map"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
 
 export default function AboutSection() {
   return (

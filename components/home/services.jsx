@@ -40,7 +40,7 @@ export default function Services() {
           { icon: 'fa-scale-balanced', title: 'Load Balance', desc: 'Optimize performance and user experience with intelligent server and traffic load management solutions.' },
           { icon: 'fa-people-arrows', title: 'Social media advertising', desc: 'Targeted ad campaigns on platforms like Facebook, Instagram & LinkedIn to generate leads and grow your brand.' },
           { icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Providing scalable and reliable cloud services htmlFor your business.' },
-          { icon: 'fa-code-compare', title: 'Lead Generater', desc: 'Data-driven lead generation strategies to help you reach the right audience and grow your sales pipeline.' }
+          { icon: 'fa-code-compare', title: 'AI/ML', desc: 'We design and implement AI-powered applications that learn, adapt, and scale with your business.' }
 
         ].map((item, index) => (
           <div key={index} className={styles.servicesBox}>
