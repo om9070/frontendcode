@@ -5,12 +5,12 @@ export default function PageRoot({ children }) {
     <>
       <Head>
         <title>
-          hanuwebtechsolutions Blog | Web Development, App Development & Digital
+          vanapextechnologies Blog | Web Development, App Development & Digital
           Marketing Insights
         </title>
         <meta
           name="description"
-          content="Read the latest articles, tips, and insights on web development, mobile app development, and digital marketing from the experts at hanuwebtechsolutions."
+          content="Read the latest articles, tips, and insights on web development, mobile app development, and digital marketing from the experts at vanapextechnologies."
         />
         <meta
           name="keywords"
@@ -19,23 +19,23 @@ export default function PageRoot({ children }) {
 
         <meta
           property="og:title"
-          content="hanuwebtechsolutions Blog | Tech & Marketing Insights"
+          content="vanapextechnologies Blog | Tech & Marketing Insights"
         />
         <meta
           property="og:description"
-          content="Stay updated with hanuwebtechsolutions’s blog covering web development trends, app design tips, SEO strategies, and digital marketing best practices."
+          content="Stay updated with vanapextechnologies’s blog covering web development trends, app design tips, SEO strategies, and digital marketing best practices."
         />
         <meta
           property="og:image"
-          content="https://hanuwebtechsolutions.com/ads7.webp"
+          content="https://vanapextechnologies.com/ads7.webp"
         />
-        <meta property="og:url" content="https://hanuwebtechsolutions.com/blog" />
+        <meta property="og:url" content="https://vanapextechnologies.com/blog" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="hanuwebtechsolutions Blog | Web, App & Marketing Insights"
+          content="vanapextechnologies Blog | Web, App & Marketing Insights"
         />
         <meta
           name="twitter:description"
@@ -43,7 +43,7 @@ export default function PageRoot({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://hanuwebtechsolutions.com/ads7.webp"
+          content="https://vanapextechnologies.com/ads7.webp"
         />
       </Head>
       {children}

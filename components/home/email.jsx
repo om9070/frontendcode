@@ -6,7 +6,7 @@ export default function Email() {
       <div className="email">
         <h1>Let's Connect Our Team</h1>
         <div className="d-flex whatsubsec">
-          <a href="mailto:hanuwebtechsolutions@gmail.com?subject=Hello%20there&body=Hi%20team,">
+          <a href="mailto:vanapextechnologies@gmail.com?subject=Hello%20there&body=Hi%20team,">
             <i className="fa-solid fa-envelope-circle-check"></i>
           </a>
           <a

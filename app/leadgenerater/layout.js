@@ -6,11 +6,11 @@ export default function PageRoot({ children }) {
       <Head>
         <title>
           Lead Generation Services in India | Digital Marketing Experts |
-          hanuwebtechsolutions
+          vanapextechnologies
         </title>
         <meta
           name="description"
-          content="hanuwebtechsolutions offers expert lead generation services through digital marketing strategies, helping businesses attract quality leads and boost sales."
+          content="vanapextechnologies offers expert lead generation services through digital marketing strategies, helping businesses attract quality leads and boost sales."
         />
         <meta
           name="keywords"
@@ -19,26 +19,26 @@ export default function PageRoot({ children }) {
 
         <meta
           property="og:title"
-          content="Lead Generation Services in India | hanuwebtechsolutions"
+          content="Lead Generation Services in India | vanapextechnologies"
         />
         <meta
           property="og:description"
-          content="Boost your sales with hanuwebtechsolutions’s lead generation services. We use proven digital marketing strategies to bring you high-quality leads."
+          content="Boost your sales with vanapextechnologies’s lead generation services. We use proven digital marketing strategies to bring you high-quality leads."
         />
         <meta
           property="og:image"
-          content="https://hanuwebtechsolutions.com/developement.webp"
+          content="https://vanapextechnologies.com/developement.webp"
         />
         <meta
           property="og:url"
-          content="https://hanuwebtechsolutions.com/leadgenerater"
+          content="https://vanapextechnologies.com/leadgenerater"
         />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Lead Generation Services in India | hanuwebtechsolutions"
+          content="Lead Generation Services in India | vanapextechnologies"
         />
         <meta
           name="twitter:description"
@@ -46,7 +46,7 @@ export default function PageRoot({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://hanuwebtechsolutions.com/developement.webp"
+          content="https://vanapextechnologies.com/developement.webp"
         />
       </Head>
       {children}

@@ -31,9 +31,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "hanuwebtechsolutions",
+  title: "vanapextechnologies ",
   description:
-    "hanuwebtechsolutions is one of the best Bihari software companies in India, offering high-quality custom software development tailored to your budget. We build web, mobile, and digital solutions to help your business grow.",
+    "vanapextechnologies is one of the best Bihari software companies in India, offering high-quality custom software development tailored to your budget. We build web, mobile, and digital solutions to help your business grow.",
 };
 
 export default function RootLayout({ children }) {
@@ -41,17 +41,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <title>
-          hanuwebtechsolutions - Affordable Web, App & Digital Marketing Services
+          vanapextechnologies - Affordable Web, App & Digital Marketing Services
         </title>
         <meta
           name="description"
-          content="hanuwebtechsolutions is one of the best Bihari software companies in India, offering custom web, app, and digital marketing solutions within your budget."
+          content="vanapextechnologies is one of the best Bihari software companies in India, offering custom web, app, and digital marketing solutions within your budget."
         />
 
         {/* Open Graph for Social Media */}
         <meta
           property="og:title"
-          content="hanuwebtechsolutions - Affordable IT Solutions"
+          content="vanapextechnologies - Affordable IT Solutions"
         />
         <meta
           property="og:description"
@@ -59,16 +59,16 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://hanuwebtechsolutions.com/coding.webp"
+          content="https://vanapextechnologies.com/coding.webp"
         />
-        <meta property="og:url" content="https://hanuwebtechsolutions.com" />
+        <meta property="og:url" content="https://vanapextechnologies.com" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="hanuwebtechsolutions - Affordable IT Solutions"
+          content="vanapextechnologies - Affordable IT Solutions"
         />
         <meta
           name="twitter:description"
@@ -76,11 +76,11 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://hanuwebtechsolutions.com/coding.webp"
+          content="https://vanapextechnologies.com/coding.webp"
         />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://hanuwebtechsolutions.com" />
+        <link rel="canonical" href="https://vanapextechnologies.com" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiasedcss ${oswald.className}`}

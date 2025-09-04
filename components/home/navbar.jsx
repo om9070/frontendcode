@@ -89,7 +89,7 @@ const Navbar = () => {
                     color: "white",
                   }}
                 >
-                  HanuWebTechSolutions
+                  vanapex
                 </p>{" "}
               </div>
             </div>
