@@ -4,18 +4,67 @@
 import { google } from "googleapis";
 
 // Initialize Google Sheets API
-async function getGoogleSheetsInstance() {
-  const auth = new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
-      private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-    },
-    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-  });
+// async function getGoogleSheetsInstance() {
+//   const auth = new google.auth.GoogleAuth({
+//     credentials: {
+//       client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+//       private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+//     },
+//     scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+//   });
 
-  const sheets = google.sheets({ version: "v4", auth });
-  return sheets;
+//   const sheets = google.sheets({ version: "v4", auth });
+//   return sheets;
+// }
+
+
+//custome function for production and devlopement
+
+async function getGoogleSheetsInstance() {
+  let credentials;
+  
+  try {
+    if (process.env.GOOGLE_CREDENTIALS_BASE64) {
+      // Method 1: Use complete JSON credentials (recommended for production)
+      const credentialsJson = Buffer.from(process.env.GOOGLE_CREDENTIALS_BASE64, 'base64').toString('utf-8');
+      credentials = JSON.parse(credentialsJson);
+      console.log('Using base64 JSON credentials');
+      
+    } else if (process.env.GOOGLE_SHEETS_PRIVATE_KEY_BASE64) {
+      // Method 2: Use base64 encoded private key
+      const privateKey = Buffer.from(process.env.GOOGLE_SHEETS_PRIVATE_KEY_BASE64, 'base64').toString('utf-8');
+      credentials = {
+        client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+        private_key: privateKey,
+      };
+      console.log('Using base64 private key');
+      
+    } else if (process.env.GOOGLE_SHEETS_PRIVATE_KEY) {
+      // Method 3: Use regular private key (for local development)
+      credentials = {
+        client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+        private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      };
+      console.log('Using regular private key');
+      
+    } else {
+      throw new Error('No Google credentials found in environment variables');
+    }
+
+    const auth = new google.auth.GoogleAuth({
+      credentials,
+      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+    });
+
+    const sheets = google.sheets({ version: 'v4', auth });
+    return sheets;
+    
+  } catch (error) {
+    console.error('Error initializing Google Sheets:', error);
+    throw error;
+  }
 }
+
 
 // GET: Read data from sheet
 export async function GET(request) {
