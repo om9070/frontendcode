@@ -57,13 +57,13 @@ async function getGoogleSheetsInstance() {
       throw new Error("Missing required Google credentials");
     }
 
-    // console.log("Using individual environment variables");
-    // console.log("Client email:", credentials.client_email);
-    // console.log("Private key length:", credentials.private_key.length);
-    // console.log(
-    //   "Private key starts with:",
-    //   credentials.private_key.substring(0, 50)
-    // );
+    console.log("Using individual environment variables");
+    console.log("Client email:", credentials.client_email);
+    console.log("Private key length:", credentials.private_key.length);
+    console.log(
+      "Private key starts with:",
+      credentials.private_key.substring(0, 50)
+    );
 
     const auth = new google.auth.GoogleAuth({
       credentials,
