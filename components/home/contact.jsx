@@ -30,6 +30,8 @@ export default function Contact() {
 
 
     const validateForm = ({ Name, Email, Message }) => {
+
+        console.log(Message,"message",Message.length)
         if (!Name || !Email || !Message) {
             return "All fields are required";
         }
@@ -53,7 +55,9 @@ export default function Contact() {
     const handleSubmit = async () => {
         try {
             setloder(true)
+            console.log(text,"message function call")
             const validationError = validateForm(text);
+            console.log(validateForm,"validition form in thi sevtion.")
             if (validationError) {
                 setloder(false)
                 Swal.fire({
