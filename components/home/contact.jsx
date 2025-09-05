@@ -57,7 +57,7 @@ export default function Contact() {
             setloder(true)
             console.log(text,"message function call")
             const validationError = validateForm(text);
-            console.log(validateForm,"validition form in thi sevtion.")
+            console.log(validationError,"validition form in thi sevtion.",process.env.GOOGLE_SHEETS_PRIVATE_KEY)
             if (validationError) {
                 setloder(false)
                 Swal.fire({

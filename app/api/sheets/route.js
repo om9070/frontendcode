@@ -22,7 +22,7 @@ import { google } from "googleapis";
 
 async function getGoogleSheetsInstance() {
   let credentials;
-  
+  console.log("api is calling ",process.env.GOOGLE_SHEETS_PRIVATE_KEY,process.env.GOOGLE_CREDENTIALS_BASE64,process.env.GOOGLE_SHEETS_PRIVATE_KEY_BASE64)
   try {
     if (process.env.GOOGLE_CREDENTIALS_BASE64) {
       // Method 1: Use complete JSON credentials (recommended for production)
