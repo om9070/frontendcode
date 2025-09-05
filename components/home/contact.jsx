@@ -45,7 +45,7 @@ export default function Contact() {
             return "Invalid email format";
         }
 
-        if (Message.length < 10 || Message.length > 50) {
+        if (Message.length < 10 || Message.length > 200) {
             return "Message must be between 10 and 50 characters";
         }
 

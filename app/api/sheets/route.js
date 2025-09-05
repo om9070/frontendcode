@@ -17,54 +17,62 @@ import { google } from "googleapis";
 //   return sheets;
 // }
 
-
 //custome function for production and devlopement
-
 async function getGoogleSheetsInstance() {
-  let credentials;
-  console.log("api is calling ",process.env.GOOGLE_SHEETS_PRIVATE_KEY,process.env.GOOGLE_CREDENTIALS_BASE64,process.env.GOOGLE_SHEETS_PRIVATE_KEY_BASE64)
   try {
-    if (process.env.GOOGLE_CREDENTIALS_BASE64) {
-      // Method 1: Use complete JSON credentials (recommended for production)
-      const credentialsJson = Buffer.from(process.env.GOOGLE_CREDENTIALS_BASE64, 'base64').toString('utf-8');
-      credentials = JSON.parse(credentialsJson);
-      console.log('Using base64 JSON credentials');
-      
-    } else if (process.env.GOOGLE_SHEETS_PRIVATE_KEY_BASE64) {
-      // Method 2: Use base64 encoded private key
-      const privateKey = Buffer.from(process.env.GOOGLE_SHEETS_PRIVATE_KEY_BASE64, 'base64').toString('utf-8');
-      credentials = {
-        client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
-        private_key: privateKey,
-      };
-      console.log('Using base64 private key');
-      
-    } else if (process.env.GOOGLE_SHEETS_PRIVATE_KEY) {
-      // Method 3: Use regular private key (for local development)
-      credentials = {
-        client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      };
-      console.log('Using regular private key');
-      
-    } else {
-      throw new Error('No Google credentials found in environment variables');
+    // Use individual environment variables (most reliable for deployment)
+    const credentials = {
+      // type: "service_account",
+      // project_id: process.env.GOOGLE_PROJECT_ID,
+      // private_key_id: process.env.GOOGLE_PRIVATE_KEY_ID,
+      // private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+      // client_email: process.env.GOOGLE_CLIENT_EMAIL,
+      // client_id: process.env.GOOGLE_CLIENT_ID,
+      // auth_uri: "https://accounts.google.com/o/oauth2/auth",
+      // token_uri: "https://oauth2.googleapis.com/token",
+      // auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+      // client_x509_cert_url: `https://www.googleapis.com/robot/v1/metadata/x509/${encodeURIComponent(process.env.GOOGLE_CLIENT_EMAIL || '')}`,
+
+      type: "service_account",
+      project_id: "excelsheet-471009",
+      private_key_id: "f8d9a1aabe3778ee749b05b361c54d32d9cb7794",
+      private_key:
+        "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnUaFGXgxjBe/n\n+gmX5nvU9h3TbUbpol+3z1qwOHRmGLKy/ORidalekCS5X8crPhNT8l+NvxXcv72y\njT0ebo8OCJafnR3HIxVzcmuGhcWzPmCk3I4ziaEXi6i6RFE4zkEyhU3w4UAGjtv8\nddb8EKjUFz94UjYvE2a653rV93vtsUbm8qPuRD4WknAkCSoNGvzcQ9jSxVHE9CYU\nun66U3FWhvvGB4/1gqKMJkeoq4eXdPrVOTvTK2AVr6vplFE9ioD3jIC3Kq1xH7rg\nrZcGTqgUv+Q/SWGf/whZi/rifSL7yZq7y0JiuznAewctT80CQ2ZNkLY9mljadj2b\nnTVTmKqlAgMBAAECggEAFI6e9fpQI0pzc1jxHMygokWq3HMspz/f6sF7LvOAuZqH\nOh6AIOi76nZjTLNL0TBLR6EbxFqZ4Qld0TYxMC/9O4gqmWnAYtsYo5qHQ3vkEmWz\nkg3XGtXqCO6LyHbkU8pjkEV4kgPazfN3a8k+pLGXTJeeoLXZGmeT05rlKKzDeSx/\n4jM4f3IkDP8GpqkSJq8KY2BsYgBGZj60h91LSGH8bpnPc/ByQUj0Xy+euNDw7BAG\nO0j/dHwLiSqdaTqT7Cy3LEhgsknYI/JETJ2xJ0Wg6HqOdRgrGQ19s/DRBM8WBj7B\n14lm3eFyvxjZjY0+RqaL31FJwoRp7yaRuHokmcNj8QKBgQDP6VghSlPFFGySvBHb\nzAC07p9ADwd6ShZvjLEMgboMSy++t58tH7mICXI+ZmJC7vg6jtF4SX4dqkPTsDaJ\nT6OnM/2RF0CukIlYBR+9xMPPHWuxAZVSuCAF5Z5wI6aaVszzHhZ7DE12AyoT9OLY\nRbF+P6LFwnnmFdeiqoU5CAb/5wKBgQDOBMD1RBgKJAFgmG2NFfP3u3J/gdhH8sFk\nbEFNaigOrMeYLxgydETKYwmQLQ8YPiPpPy5STm4Nuze/r0GjmO3+Ox2X6t2VI6iQ\na9Ui/GYWtJR036OFAtAre/ylJVYgMVyKa5+3+PJCYwk0ITDvhp9OfzQ7ZGu4eRAE\nJPwZrNtfkwKBgQCGKKtOp/iQFlLNCIB5lRTrq4KlQk1v8rixeFaSnG8iGa4QYcpb\nwrnkdzv52fUT/cG9f4TZGos/tyuXQICgb/xJGzpG0ntRaUDGxF+sA3jaf8CK8luZ\niehYBcgL0mVh+Bq90i9tbQ3a1cXkJMPwDGCw930gIRKpjnSbqW7X0z85BwKBgFPn\nhbqeH/hJT7JKght6vGDBm9EoTbCHwpGmsTXZLTVE0wk87OrnhXizuxpX75TdAf0l\nuTTWMmYvQHY151K8nvjylIvhoJrz6dvfvu8/wkgvBWNQDaXHTobXOT79JMV5tQm+\n6U6g+fFlqkLr3aU/u7PZhKlHrcN0srwtX+sJBlM3AoGBAKLKbnuVBngS1cbEAA3U\nEFAwdUVLTsB54vWWrgEmYNMRHtLZ0ctC8qP1GzI0qIs0aSa+GWKVT+9wdCeX5iIC\nnPkpSCe+UIfzzpwkKjkfh0Z+LcDabnYnVAxYk38vNWle4nQ1u/ve3ecEu/LmP8Dy\nja/3xqtyZEYYysXHkA41Wgi8\n-----END PRIVATE KEY-----\n",
+      client_email: "data-store@excelsheet-471009.iam.gserviceaccount.com",
+      client_id: "106233424024357103634",
+      auth_uri: "https://accounts.google.com/o/oauth2/auth",
+      token_uri: "https://oauth2.googleapis.com/token",
+      auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+      client_x509_cert_url:
+        "https://www.googleapis.com/robot/v1/metadata/x509/data-store%40excelsheet-471009.iam.gserviceaccount.com",
+      universe_domain: "googleapis.com",
+    };
+
+    // Validate required fields
+    if (!credentials.private_key || !credentials.client_email) {
+      throw new Error("Missing required Google credentials");
     }
+
+    console.log("Using individual environment variables");
+    console.log("Client email:", credentials.client_email);
+    console.log("Private key length:", credentials.private_key.length);
+    console.log(
+      "Private key starts with:",
+      credentials.private_key.substring(0, 50)
+    );
 
     const auth = new google.auth.GoogleAuth({
       credentials,
-      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
-    const sheets = google.sheets({ version: 'v4', auth });
+    const sheets = google.sheets({ version: "v4", auth });
     return sheets;
-    
   } catch (error) {
-    console.error('Error initializing Google Sheets:', error);
+    console.error("Error initializing Google Sheets:", error);
     throw error;
   }
 }
-
 
 // GET: Read data from sheet
 export async function GET(request) {
