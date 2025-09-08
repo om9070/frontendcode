@@ -1,24 +1,82 @@
-import Head from "next/head";
+import Script from "next/script";
+
+export const metadata = {
+  title: "About Vanapex Technologies | Software Development Across Industries",
+  description:
+    "Vanapex Technologies specializes in software and app development for Healthcare, E-commerce, Education, Gym, Real Estate, Travel, Event, Jewellery, Networking, Manufacturing, Logistics, Accounting, and Web Hosting industries.",
+  openGraph: {
+    title: "About Vanapex Technologies",
+    description:
+      "We are experts in building software solutions for Healthcare, E-commerce, Education, Real Estate, Travel, Logistics, Accounting, and more industries.",
+    url: "https://vanapex.com/about",
+    siteName: "Vanapex Technologies",
+    images: [
+      {
+        url: "https://vanapex.com/seo/about.png", // create a banner with industry icons
+        width: 1200,
+        height: 628,
+        alt: "About Vanapex Technologies",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Vanapex Technologies",
+    description:
+      "Vanapex develops tailored software for Healthcare, E-commerce, Education, Real Estate, Travel, Logistics, Accounting, and more industries.",
+    images: ["https://vanapex.com/seo/about.png"],
+  },
+  alternates: {
+    canonical: "https://vanapex.com/about",
+  },
+};
 
 export default function PageRoot({ children }) {
   return (
     <>
-        <title>About vanapextechnologies | Affordable Software, Web & App Development in India</title>
-<meta name="description" content="Learn about vanapextechnologies, one of the best Bihari IT companies in India. We specialize in affordable custom software, web development, mobile app development, and digital marketing services." />
-<meta name="keywords" content="about vanapextechnologies, bihari IT company, affordable software development India, web development company Bihar, mobile app development, digital marketing services" />
-
-<meta property="og:title" content="About vanapextechnologies | Affordable IT & Software Solutions in India" />
-<meta property="og:description" content="vanapextechnologies is a leading Bihari IT company offering affordable web, app, and software development with a focus on quality and innovation." />
-<meta property="og:image" content="https://vanapextechnologies.com/digital/digital1.webp" />
-<meta property="og:url" content="https://vanapextechnologies.com/about" />
-<meta property="og:type" content="website" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="About vanapextechnologies | Affordable Software, Web & App Development" />
-<meta name="twitter:description" content="Get to know vanapextechnologies — a top IT company in Bihar delivering budget-friendly custom software, web solutions, and mobile apps in India." />
-<meta name="twitter:image" content="https://vanapextechnologies.com/digital/digital1.webp" />
-
       {children}
+      <Script
+        id="about-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Vanapex Technologies",
+            url: "https://vanapex.com",
+            logo: "https://vanapex.com/logo.png",
+            description:
+              "Vanapex Technologies specializes in building custom software solutions for Healthcare, E-commerce, Education, Real Estate, Logistics, and more industries.",
+            sameAs: [
+              "https://www.facebook.com/people/Vanapex/61580135445838/",
+              "https://www.instagram.com/vanapex",
+              "https://www.linkedin.com/company/vanapex",
+              "https://x.com/vanapex",
+            ],
+            areaServed: {
+              "@type": "Place",
+              name: "Global",
+            },
+            knowsAbout: [
+              "Healthcare Software",
+              "E-commerce Development",
+              "Education Platforms",
+              "Gym Management Systems",
+              "Real Estate Applications",
+              "Travel & Tourism Apps",
+              "Event Management Software",
+              "Jewellery Business Solutions",
+              "Networking Solutions",
+              "Manufacturing Software",
+              "Logistics Applications",
+              "Accounting & Finance Tools",
+              "Web Hosting Solutions",
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

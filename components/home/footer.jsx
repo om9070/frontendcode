@@ -44,17 +44,21 @@ export default function Footer() {
                             <div className="contact-info">
                                 <div className="contact-item">
                                     <i className="fas fa-map-marker-alt"></i>
-                                    <span>123 Rue du Bien-être<br />75000 Paris, France</span>
+                                    <span>Latehar,Ranchi,Jharkhand<br />Latehar Children ,829206</span>
+                                </div>
+                                 <div className="contact-item">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                    <span>Rohtas(samhuta),Patna,Bihar<br />High school samahuta,821303</span>
                                 </div>
 
                                 <div className="contact-item">
                                     <i className="fas fa-phone-alt"></i>
-                                    <span>+33 1 23 45 67 89<br />Lun-Ven, 9h-18h</span>
+                                    <span>+91 8340606970<br /></span>
                                 </div>
 
                                 <div className="contact-item">
                                     <i className="fas fa-envelope"></i>
-                                    <span>contact@harmonie.com<br />support@harmonie.com</span>
+                                    <span>vanapextechnologies@gmail.com<br />hr@vanapex.com</span>
                                 </div>
                             </div>
                         </div>

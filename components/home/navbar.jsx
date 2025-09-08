@@ -78,18 +78,19 @@ const Navbar = () => {
                 <Image
                   height={50}
                   width={60}
-                  src={"/logo2.png"}
+                  src={"/logo.png"}
                   alt="logo image"
                   priority
+                  style={{marginBottom:"10px"}}
                 />
                 <p
                   style={{
-                    paddingLeft: "1rem",
-                    margin: "0px auto",
+                    paddingLeft: "0.5rem",
+                    marginBottom: "20px",
                     color: "white",
                   }}
                 >
-                  vanapex
+                  Vanapex Technologies
                 </p>{" "}
               </div>
             </div>
@@ -124,7 +125,7 @@ const Navbar = () => {
                           "/application",
                           "/seo",
                           "/loadmanagement",
-                          "/leadgenerater",
+                          "/leadgenerator",
                           "/ads",
                           "/aiservice"
                         ].includes(router)
@@ -163,7 +164,7 @@ const Navbar = () => {
                         <ul>
                           <li>
                             <i className="fa-solid fa-chalkboard-user"></i>
-                            <Link href="/leadgenerater">Lead Generater</Link>
+                            <Link href="/leadgenerator">Lead Generater</Link>
                           </li>
                           <li>
                             <i className="fa-brands fa-square-instagram"></i>

@@ -17,6 +17,7 @@
     "flowbite-react": "^0.11.9",
     "googleapis": "^159.0.0",
     "next": "^15.4.1",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "sweetalert2": "^11.23.0"

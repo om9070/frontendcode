@@ -1,26 +1,97 @@
-import Head from "next/head";
+
+import Script from "next/script";
+
+export const metadata = {
+  title: "AI Services | Chatbot & AI Solutions | Vanapex Technologies",
+  description:
+    "Vanapex offers AI-powered services including intelligent chatbots, AI voice chatbots, and WhatsApp chatbots. Automate customer support, boost engagement, and improve business efficiency with our AI solutions.",
+  openGraph: {
+    title: "AI Services | Chatbot & AI Solutions | Vanapex Technologies",
+    description:
+      "Explore Vanapex's AI-powered services: Chatbots, AI Voice Chatbots, and WhatsApp Chatbots designed to automate customer support and drive engagement.",
+    url: "https://vanapex.com/aiservice",
+    siteName: "Vanapex Technologies",
+    images: [
+      {
+        url: "https://vanapex.com/seo/aiservice.png", // create 1200x628 image for AI services
+        width: 1200,
+        height: 628,
+        alt: "Vanapex AI Services",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Services | Vanapex Technologies",
+    description:
+      "AI-powered chatbots, AI voice chatbots, and WhatsApp chatbot solutions by Vanapex Technologies. Enhance customer experience with smart automation.",
+    images: ["https://vanapex.com/seo/aiservice.png"],
+  },
+  alternates: {
+    canonical: "https://vanapex.com/aiservice",
+  },
+};
 
 export default function PageRoot({ children }) {
   return (
     <>
-    <Head>
-        <title>AI Solutions & Artificial Intelligence Services | vanapextechnologies India</title>
-<meta name="description" content="vanapextechnologies provides advanced AI solutions in India, including machine learning, AI automation, natural language processing, and predictive analytics to help businesses innovate and grow." />
-<meta name="keywords" content="AI services India, artificial intelligence solutions, machine learning development, AI automation, NLP services, predictive analytics, AI software development Bihar" />
-
-<meta property="og:title" content="AI Solutions & Artificial Intelligence Services | vanapextechnologies" />
-<meta property="og:description" content="Boost your business with AI-powered solutions from vanapextechnologies. We offer ML models, AI automation, NLP, and predictive analytics tailored to your needs." />
-<meta property="og:image" content="https://vanapextechnologies.com/ai.webp" />
-<meta property="og:url" content="https://vanapextechnologies.com/aiservice" />
-<meta property="og:type" content="website" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AI Solutions & Artificial Intelligence Services | vanapextechnologies" />
-<meta name="twitter:description" content="Custom AI solutions including ML, automation, NLP, and predictive analytics for business growth." />
-<meta name="twitter:image" content="https://vanapextechnologies.com/ai.webp" />
-
-    </Head>
       {children}
+      <Script
+        id="ai-service-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "AI Services - Chatbots, AI Voice Chatbots, WhatsApp Chatbots",
+            provider: {
+              "@type": "Organization",
+              name: "Vanapex Technologies",
+              url: "https://vanapex.com",
+              logo: "https://vanapex.com/logo.png",
+            },
+            areaServed: {
+              "@type": "Place",
+              name: "Global",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "AI Services",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Chatbot Development",
+                    description:
+                      "Custom AI-powered chatbots for websites and applications to handle customer queries and automate responses.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "AI Voice Chatbot",
+                    description:
+                      "Voice-enabled AI chatbots for natural, conversational customer experiences.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "WhatsApp Chatbot",
+                    description:
+                      "Smart WhatsApp chatbot solutions to engage customers on the world's most popular messaging app.",
+                  },
+                },
+              ],
+            },
+          }),
+        }}
+      />
     </>
   );
 }

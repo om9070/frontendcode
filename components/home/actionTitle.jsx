@@ -23,7 +23,7 @@ export default function ActionTitle() {
 
   return (
     <div>
-      <h1 className="text-center my-5 HeadingAction color">We Focus On</h1>
+      <h1 className="text-center my-5 HeadingAction color">Vanapex Focus On</h1>
       <div className="d-flex justify-content-center">
         <h1 className="colorLeft d-flex justify-content-center align-items-center">
           DEVELOPMENT

@@ -5,14 +5,17 @@ import Footer from "@/components/home/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Oswald } from "next/font/google";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import LoadingSpinner from "./loading";
+import Script from "next/script";
 
 const ChatWidget = dynamic(() => import("@/components/ChatWidget"), {
-  loading: () => <p><LoadingSpinner /></p>,
+  loading: () => (
+    <p>
+      <LoadingSpinner />
+    </p>
+  ),
 });
-
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -31,64 +34,135 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "vanapextechnologies ",
+  metadataBase: new URL("https://vanapex.com"), // base domain
+  alternates: {
+    canonical: "/",
+  },
+  title: "Vanapex Technologies | Website, Mobile App & AI Solutions",
   description:
-    "vanapextechnologies is one of the best Bihari software companies in India, offering high-quality custom software development tailored to your budget. We build web, mobile, and digital solutions to help your business grow.",
+    "Vanapex Technologies is a leading software development company specializing in website design, web applications, mobile apps (iOS & Android), AI/ML solutions, and digital marketing at affordable prices.",
+  keywords: [
+    "Vanapex",
+    "Vanapex Technologies",
+    "software company",
+    "website development",
+    "web app development",
+    "mobile app development",
+    "iOS app development",
+    "AI solutions",
+    "ML development",
+    "digital marketing",
+  ],
+  openGraph: {
+    title: "Vanapex Technologies | Website, Mobile App & AI Solutions",
+    description:
+      "We build websites, web apps, mobile apps, AI/ML solutions, and provide digital marketing services at affordable prices.",
+    url: "https://vanapex.com",
+    siteName: "Vanapex Technologies",
+    images: [
+      {
+        url: "https://vanapex.com/seo/home.png",
+        width: 1200,
+        height: 630,
+        alt: "Vanapex Technologies Software Solutions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vanapex Technologies | Website, Mobile App & AI Solutions",
+    description:
+      "Experts in website development, mobile apps, AI/ML, and digital marketing.",
+    images: ["https://vanapex.com/seo/home.png"],
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>
-          vanapextechnologies - Affordable Web, App & Digital Marketing Services
-        </title>
-        <meta
-          name="description"
-          content="vanapextechnologies is one of the best Bihari software companies in India, offering custom web, app, and digital marketing solutions within your budget."
-        />
-
-        {/* Open Graph for Social Media */}
-        <meta
-          property="og:title"
-          content="vanapextechnologies - Affordable IT Solutions"
-        />
-        <meta
-          property="og:description"
-          content="Custom web, mobile, and digital marketing services tailored to your budget."
-        />
-        <meta
-          property="og:image"
-          content="https://vanapextechnologies.com/coding.webp"
-        />
-        <meta property="og:url" content="https://vanapextechnologies.com" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="vanapextechnologies - Affordable IT Solutions"
-        />
-        <meta
-          name="twitter:description"
-          content="Budget-friendly custom web, mobile, and digital marketing services in India."
-        />
-        <meta
-          name="twitter:image"
-          content="https://vanapextechnologies.com/coding.webp"
-        />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://vanapextechnologies.com" />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiasedcss ${oswald.className}`}
       >
         <Navbar />
         {children}
         <Footer />
-        <ChatWidget/>
+        <ChatWidget />
+        <Script
+          id="home-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Vanapex Technologies",
+              url: "https://vanapex.com",
+              logo: "https://vanapex.com/logo.png",
+              description:
+                "Vanapex Technologies specializes in website development, mobile applications, digital marketing, and AI & ML solutions.",
+              sameAs: [
+                "https://www.facebook.com/people/Vanapex/61580135445838/",
+                "https://www.instagram.com/vanapex_",
+                "https://www.linkedin.com/company/vanapex",
+                "https://x.com/vanapex",
+              ],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "India",
+                addressCountry: "IN",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-8340606970",
+                contactType: "customer service",
+                availableLanguage: ["English", "Hindi"],
+              },
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Vanapex Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Website & Web Applications",
+                      description:
+                        "Custom website and web application development tailored to your business needs.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Android & iOS Applications",
+                      description:
+                        "Native and cross-platform mobile app development, including Play Store and App Store publishing.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Digital Marketing",
+                      description:
+                        "Comprehensive digital marketing services including SEO, social media, and paid campaigns.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "AI & ML Solutions",
+                      description:
+                        "AI-powered solutions including chatbots, automation, predictive models, and machine learning applications.",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   );

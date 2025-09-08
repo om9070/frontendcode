@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://vanapex.com
+
+# Sitemaps
+Sitemap: https://vanapex.com/sitemap.xml

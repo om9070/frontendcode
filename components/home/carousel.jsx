@@ -9,14 +9,14 @@ const Carousel = () => {
     {
       type: "video",
       src: "/meeting.mp4",
-      title: "Let's Work With Bihari Team",
+      title: "Let's Work With Genius Team",
       description: "We Focus On Quality.",
     },
     {
       type: "image",
       src: "/coding.webp",
-      title: "One Chance Must Improve Your Bussiness",
-      description: "The Good Work Takes Time.",
+      title: "One chance is all you have to improve your business",
+      description: "Good things take time.",
     }
   ];
 

@@ -46,7 +46,7 @@ export default function Contact() {
         }
 
         if (Message.length < 10 || Message.length > 200) {
-            return "Message must be between 10 and 50 characters";
+            return "Message must be between 10 and 200 characters";
         }
 
         return ""; // no errors
