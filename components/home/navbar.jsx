@@ -141,17 +141,17 @@ const Navbar = () => {
                         <ul>
                           <li >
                             <i className="fa-solid fa-laptop-code"></i>
-                            <Link href="/website">Website Develpment</Link>
+                            <Link href="/website">Website Development</Link>
                           </li>
                           <li>
                             <i className="fa-solid fa-mobile-screen"></i>
                             <Link href="/application">
-                              Application Develpment
+                              Application Development
                             </Link>
                           </li>
                           <li>
                             <i className="fa-brands fa-searchengin"></i>
-                            <Link href="/seo">SEO Develpment</Link>
+                            <Link href="/seo">SEO Development</Link>
                           </li>
                           <li>
                             <i className="fa-solid fa-scale-balanced"></i>
@@ -185,12 +185,12 @@ const Navbar = () => {
                           style={{
                             position: "relative",
                             width: "100%",
-                            height: "80%",
+                            height: "101%",
                             aspectRatio: "2 / 1",
                           }}
                         >
                           <Image
-                            src="/seo6.webp"
+                            src="/logonav.png"
                             alt="Hero Banner"
                             fill
                             priority

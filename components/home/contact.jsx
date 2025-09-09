@@ -126,15 +126,15 @@ export default function Contact() {
                                     <h4 className='font'>Contact Info</h4>
                                     <div className="d-flex info_single align-items-center">
                                         <i className="fas fa-headset"></i>
-                                        <span className='font'>+91 7079679070</span>
+                                        <span className='font'>+91 8340606970</span>
                                     </div>
                                     <div className="d-flex info_single align-items-center">
                                         <i className="fas fa-envelope-open-text"></i>
-                                        <span className='font'>info@flightmantra.com</span>
+                                        <span className='font'>hr@vanapex.com</span>
                                     </div>
                                     <div className="d-flex info_single align-items-center">
                                         <i className="fas fa-map-marked-alt"></i>
-                                        <span className='font'>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
+                                        <span className='font'>20+ Service city across India.</span>
                                     </div>
 
                                 </div>

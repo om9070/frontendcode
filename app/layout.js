@@ -76,7 +76,10 @@ export const metadata = {
     description:
       "Experts in website development, mobile apps, AI/ML, and digital marketing.",
     images: ["https://vanapex.com/seo/home.png"],
-  }
+  },
+  icons: {
+    icon: "/logonav.png"
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -32,6 +32,7 @@ export const metadata = {
   alternates: {
     canonical: "https://vanapex.com/seo",
   },
+  
 };
 
 export default function PageRoot({ children }) {
