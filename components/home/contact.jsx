@@ -130,11 +130,11 @@ export default function Contact() {
                                     </div>
                                     <div className="d-flex info_single align-items-center">
                                         <i className="fas fa-envelope-open-text"></i>
-                                        <span className='font'>hr@vanapex.com</span>
+                                        <span className='font'>hr@vanapex.com</span> 
                                     </div>
                                     <div className="d-flex info_single align-items-center">
                                         <i className="fas fa-map-marked-alt"></i>
-                                        <span className='font'>20+ Service city across India.</span>
+                                        <span className='font'>Latehar,Ranchi, Jharkhand</span>
                                     </div>
 
                                 </div>

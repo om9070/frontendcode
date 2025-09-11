@@ -76,12 +76,12 @@ const Navbar = () => {
             <div className="header-item item-left">
               <div className="logo">
                 <Image
-                  height={50}
-                  width={60}
-                  src={"/logo.png"}
+                  height={55}
+                  width={65}
+                  src={"/logok.png"}
                   alt="logo image"
                   priority
-                  style={{marginBottom:"10px"}}
+                  style={{marginBottom:"15px",borderRadius:"15px"}}
                 />
                 <p
                   style={{
@@ -185,7 +185,7 @@ const Navbar = () => {
                           style={{
                             position: "relative",
                             width: "100%",
-                            height: "101%",
+                            height: "115%",
                             aspectRatio: "2 / 1",
                           }}
                         >
