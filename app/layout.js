@@ -52,6 +52,12 @@ export const metadata = {
     "AI solutions",
     "ML development",
     "digital marketing",
+    "software company in delhi",
+    "software company in Ranchi",
+    "software company in patna",
+    "software company in india",
+    "software company in latehar",
+
   ],
   openGraph: {
     title: "Vanapex Technologies | Website, Mobile App & AI Solutions",
@@ -78,7 +84,8 @@ export const metadata = {
     images: ["https://vanapex.com/seo/home.png"],
   },
   icons: {
-    icon: "/logonav.png"
+    icon: "/favicon.ico", // your custom favicon
+    apple: "/logo.png",
   },
 };
 
@@ -109,6 +116,21 @@ export default function RootLayout({ children }) {
                 "https://www.instagram.com/vanapex_",
                 "https://www.linkedin.com/company/vanapex",
                 "https://x.com/vanapex",
+              ],
+              knowsAbout: [
+                "Healthcare Software",
+                "E-commerce Development",
+                "Education Platforms",
+                "Gym Management Systems",
+                "Real Estate Applications",
+                "Travel & Tourism Apps",
+                "Event Management Software",
+                "Jewellery Business Solutions",
+                "Networking Solutions",
+                "Manufacturing Software",
+                "Logistics Applications",
+                "Accounting & Finance Tools",
+                "Web Hosting Solutions",
               ],
               address: {
                 "@type": "PostalAddress",

@@ -190,7 +190,7 @@ const Navbar = () => {
                           }}
                         >
                           <Image
-                            src="/logonav.png"
+                            src="/logo.png"
                             alt="Hero Banner"
                             fill
                             priority

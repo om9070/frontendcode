@@ -58,22 +58,7 @@ export default function PageRoot({ children }) {
             areaServed: {
               "@type": "Place",
               name: "Global",
-            },
-            knowsAbout: [
-              "Healthcare Software",
-              "E-commerce Development",
-              "Education Platforms",
-              "Gym Management Systems",
-              "Real Estate Applications",
-              "Travel & Tourism Apps",
-              "Event Management Software",
-              "Jewellery Business Solutions",
-              "Networking Solutions",
-              "Manufacturing Software",
-              "Logistics Applications",
-              "Accounting & Finance Tools",
-              "Web Hosting Solutions",
-            ],
+            }
           }),
         }}
       />
