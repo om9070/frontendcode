@@ -8,11 +8,11 @@ export const metadata = {
     title: "Website Development Services | Vanapex",
     description:
       "Get expert website development solutions with Vanapex. From UI/UX design to backend development and database optimization, we deliver scalable, high-performance websites.",
-    url: "https://vanapex.com/website",
+    url: "https://www.vanapex.com/website",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/website.png", // Create a banner with code + UI elements
+        url: "https://www.vanapex.com/seo/website.png", // Create a banner with code + UI elements
         width: 1200,
         height: 628,
         alt: "Vanapex Website Development Services",
@@ -26,10 +26,10 @@ export const metadata = {
     title: "Website Development Services | Vanapex",
     description:
       "Vanapex specializes in website development, UI/UX, backend systems, API integration, and database optimization to boost performance.",
-    images: ["https://vanapex.com/seo/website.png"],
+    images: ["https://www.vanapex.com/seo/website.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/website",
+    canonical: "https://www.vanapex.com/website",
   },
   
 };
@@ -49,8 +49,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",
@@ -58,7 +58,7 @@ export default function PageRoot({ children }) {
             },
             offers: {
               "@type": "Offer",
-              url: "https://vanapex.com/website",
+              url: "https://www.vanapex.com/website",
               description:
                 "Expert website development services including UI/UX design, backend systems, API implementation, and database optimization.",
               priceCurrency: "USD",

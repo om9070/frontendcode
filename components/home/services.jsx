@@ -40,8 +40,11 @@ export default function Services() {
           { icon: 'fa-scale-balanced', title: 'Load Balance', desc: 'Optimize performance and user experience with intelligent server and traffic load management solutions.' },
           { icon: 'fa-people-arrows', title: 'Social media advertising', desc: 'Targeted ad campaigns on platforms like Facebook, Instagram & LinkedIn to generate leads and grow your brand.' },
           { icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Providing scalable and reliable cloud services htmlFor your business.' },
-          { icon: 'fa-code-compare', title: 'AI/ML', desc: 'We design and implement AI-powered applications that learn, adapt, and scale with your business.' }
-
+          { icon: 'fa-code-compare', title: 'AI/ML', desc: 'We design and implement AI-powered applications that learn, adapt, and scale with your business.' },
+          { icon: 'fa-people-group', title: 'Digital Marketing', desc: 'Boost your online presence with SEO, social media marketing, paid ads, and content strategies that generate leads and grow your brand.' },
+          { icon: 'fa-cart-shopping', title: 'E-Commerce Solutions', desc: 'Complete e-commerce development with product management, secure payments, and customer-friendly interfaces.' },
+          { icon: 'fa-list-check', title: 'CRM & ERP Solutions', desc: 'Customized CRM and ERP platforms that streamline daily business operations, task management, and customer handling.' },
+          { icon: 'brands fa-intercom', title: 'Custom Software Development (Web & App)', desc: 'End-to-end development of custom software solutions for web and mobile applications — designed to fit your exact business workflows and daily operations.' }
         ].map((item, index) => (
           <div key={index} className={styles.servicesBox}>
             <i className={`fa-solid ${item.icon}`}></i>

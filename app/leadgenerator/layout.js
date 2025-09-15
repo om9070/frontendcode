@@ -8,11 +8,11 @@ export const metadata = {
     title: "Lead Generation Experts | Vanapex Technologies",
     description:
       "We provide professional lead generation services for job seekers, students, IT & non-technical audiences, and civil members. Drive growth with Vanapex.",
-    url: "https://vanapex.com/leadgenerator",
+    url: "https://www.vanapex.com/leadgenerator",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/leadgenerator.png", // create 1200x628 banner image for lead generation
+        url: "https://www.vanapex.com/seo/leadgenerator.png", // create 1200x628 banner image for lead generation
         width: 1200,
         height: 628,
         alt: "Vanapex Lead Generation Services",
@@ -26,10 +26,10 @@ export const metadata = {
     title: "Lead Generation Services | Vanapex",
     description:
       "Expert lead generation solutions for businesses. Vanapex delivers high-quality leads across industries — job seekers, students, IT & non-technical audiences.",
-    images: ["https://vanapex.com/seo/leadgenerator.png"],
+    images: ["https://www.vanapex.com/seo/leadgenerator.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/leadgenerator",
+    canonical: "https://www.vanapex.com/leadgenerator",
   },
   
 };
@@ -50,8 +50,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",

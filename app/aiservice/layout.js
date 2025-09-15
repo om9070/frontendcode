@@ -9,11 +9,11 @@ export const metadata = {
     title: "AI Services | Chatbot & AI Solutions | Vanapex Technologies",
     description:
       "Explore Vanapex's AI-powered services: Chatbots, AI Voice Chatbots, and WhatsApp Chatbots designed to automate customer support and drive engagement.",
-    url: "https://vanapex.com/aiservice",
+    url: "https://www.vanapex.com/aiservice",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/aiservice.png", // create 1200x628 image for AI services
+        url: "https://www.vanapex.com/seo/aiservice.png", // create 1200x628 image for AI services
         width: 1200,
         height: 628,
         alt: "Vanapex AI Services",
@@ -27,10 +27,10 @@ export const metadata = {
     title: "AI Services | Vanapex Technologies",
     description:
       "AI-powered chatbots, AI voice chatbots, and WhatsApp chatbot solutions by Vanapex Technologies. Enhance customer experience with smart automation.",
-    images: ["https://vanapex.com/seo/aiservice.png"],
+    images: ["https://www.vanapex.com/seo/aiservice.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/aiservice",
+    canonical: "https://www.vanapex.com/aiservice",
   },
   
 };
@@ -50,8 +50,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",

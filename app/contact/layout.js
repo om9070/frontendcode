@@ -8,11 +8,11 @@ export const metadata = {
     title: "Contact Vanapex Technologies | Web, Mobile, AI & Marketing Experts",
     description:
       "Get in touch with Vanapex for expert website development, mobile apps, AI chatbot solutions, and digital marketing services.",
-    url: "https://vanapex.com/contact",
+    url: "https://www.vanapex.com/contact",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/contact.png", // create a 1200x628 banner for contact page
+        url: "https://www.vanapex.com/seo/contact.png", // create a 1200x628 banner for contact page
         width: 1200,
         height: 628,
         alt: "Contact Vanapex Technologies",
@@ -26,10 +26,10 @@ export const metadata = {
     title: "Contact Vanapex Technologies",
     description:
       "Reach out to Vanapex Technologies for web development, mobile apps, AI solutions, and digital marketing inquiries.",
-    images: ["https://vanapex.com/seo/contact.png"],
+    images: ["https://www.vanapex.com/seo/contact.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/contact",
+    canonical: "https://www.vanapex.com/contact",
   },
   
 };
@@ -47,20 +47,14 @@ export default function PageRoot({ children }) {
             mainEntity: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+91-83406-06970",
                 contactType: "customer support",
                 availableLanguage: ["English", "Hindi"],
-              },
-              sameAs: [
-                "https://www.facebook.com/people/Vanapex/61580135445838/",
-                "https://www.instagram.com/vanapex",
-                "https://www.linkedin.com/company/vanapex",
-                "https://x.com/vanapex",
-              ],
+              }
             },
           }),
         }}

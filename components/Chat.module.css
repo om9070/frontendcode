@@ -28,8 +28,8 @@
   position: fixed;
   bottom: 90px;
   right: 20px;
-  width: 380px;
-  height: 500px;
+  width: 350px;
+  height: 450px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
@@ -62,8 +62,8 @@
 
 .chatHeader h3 {
   margin: 0;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .closeButton {
@@ -89,8 +89,10 @@
 .messagesContainer {
   flex: 1;
   overflow-y: auto;
-  padding: 16px;
+  padding: 12px;
+  font-weight: 100;
   background: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
   scrollbar-width: thin;
   scrollbar-color: #cbd5e0 transparent;
 }

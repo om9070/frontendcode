@@ -8,11 +8,11 @@ export const metadata = {
     title: "About Vanapex Technologies",
     description:
       "We are experts in building software solutions for Healthcare, E-commerce, Education, Real Estate, Travel, Logistics, Accounting, and more industries.",
-    url: "https://vanapex.com/about",
+    url: "https://www.vanapex.com/about",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/about.png", // create a banner with industry icons
+        url: "https://www.vanapex.com/seo/about.png", // create a banner with industry icons
         width: 1200,
         height: 628,
         alt: "About Vanapex Technologies",
@@ -26,10 +26,10 @@ export const metadata = {
     title: "About Vanapex Technologies",
     description:
       "Vanapex develops tailored software for Healthcare, E-commerce, Education, Real Estate, Travel, Logistics, Accounting, and more industries.",
-    images: ["https://vanapex.com/seo/about.png"],
+    images: ["https://www.vanapex.com/seo/about.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/about",
+    canonical: "https://www.vanapex.com/about",
   }
 };
 
@@ -45,16 +45,10 @@ export default function PageRoot({ children }) {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Vanapex Technologies",
-            url: "https://vanapex.com",
-            logo: "https://vanapex.com/logo.png",
+            url: "https://www.vanapex.com",
+            logo: "https://www.vanapex.com/logo.png",
             description:
               "Vanapex Technologies specializes in building custom software solutions for Healthcare, E-commerce, Education, Real Estate, Logistics, and more industries.",
-            sameAs: [
-              "https://www.facebook.com/people/Vanapex/61580135445838/",
-              "https://www.instagram.com/vanapex",
-              "https://www.linkedin.com/company/vanapex",
-              "https://x.com/vanapex",
-            ],
             areaServed: {
               "@type": "Place",
               name: "Global",

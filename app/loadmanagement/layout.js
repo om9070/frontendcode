@@ -8,11 +8,11 @@ export const metadata = {
     title: "Load Management & Balancing Services | Vanapex",
     description:
       "Optimize your systems with Vanapex load management solutions. We balance load across frontend, backend, and mobile apps to boost performance and efficiency.",
-    url: "https://vanapex.com/loadmanagement",
+    url: "https://www.vanapex.com/loadmanagement",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/loadmanagement.png", // create a 1200x628 banner showing performance/load balancing
+        url: "https://www.vanapex.com/seo/loadmanagement.png", // create a 1200x628 banner showing performance/load balancing
         width: 1200,
         height: 628,
         alt: "Vanapex Load Balancing Services",
@@ -26,10 +26,10 @@ export const metadata = {
     title: "Load Balancing & Performance Optimization | Vanapex",
     description:
       "Vanapex specializes in load management for frontend, backend, and mobile apps. Improve project speed, reliability, and scalability.",
-    images: ["https://vanapex.com/seo/loadmanagement.png"],
+    images: ["https://www.vanapex.com/seo/loadmanagement.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/loadmanagement",
+    canonical: "https://www.vanapex.com/loadmanagement",
   },
   
 };
@@ -49,8 +49,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",

@@ -9,11 +9,11 @@ export const metadata = {
     title: "SEO Services | Vanapex",
     description:
       "Vanapex offers expert SEO solutions including website ranking, keyword optimization, and backlink support to drive traffic and growth.",
-    url: "https://vanapex.com/seo",
+    url: "https://www.vanapex.com/seo",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/seo.png", // create a banner showing SEO growth chart
+        url: "https://www.vanapex.com/seo/seo.png", // create a banner showing SEO growth chart
         width: 1200,
         height: 628,
         alt: "Vanapex SEO Services",
@@ -27,10 +27,10 @@ export const metadata = {
     title: "SEO Services | Vanapex",
     description:
       "Website ranking, keyword research, and backlink support. Vanapex provides expert SEO services to boost your online visibility.",
-    images: ["https://vanapex.com/seo/seo.png"],
+    images: ["https://www.vanapex.com/seo/seo.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/seo",
+    canonical: "https://www.vanapex.com/seo",
   },
   
 };
@@ -50,8 +50,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",
@@ -59,7 +59,7 @@ export default function PageRoot({ children }) {
             },
             offers: {
               "@type": "Offer",
-              url: "https://vanapex.com/seo",
+              url: "https://www.vanapex.com/seo",
               description:
                 "SEO services including website ranking, keyword optimization, and backlink support.",
               priceCurrency: "USD",

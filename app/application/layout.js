@@ -8,11 +8,11 @@ export const metadata = {
     title: "Mobile & iOS Application Development | Vanapex Technologies",
     description:
       "Get expert mobile app, iOS app, and tablet application development services. Vanapex also helps with Google Play Store and Apple App Store publishing.",
-    url: "https://vanapex.com/application",
+    url: "https://www.vanapex.com/application",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/application.png", // create a 1200x628 banner for application dev
+        url: "https://www.vanapex.com/seo/application.png", // create a 1200x628 banner for application dev
         width: 1200,
         height: 628,
         alt: "Mobile App Development Vanapex",
@@ -26,10 +26,10 @@ export const metadata = {
     title: "Mobile & iOS App Development | Vanapex Technologies",
     description:
       "Vanapex offers expert mobile, iOS, and tablet app development services with full Play Store and App Store publishing support.",
-    images: ["https://vanapex.com/seo/application.png"],
+    images: ["https://www.vanapex.com/seo/application.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/application",
+    canonical: "https://www.vanapex.com/application",
   },
   
 };
@@ -50,8 +50,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",

@@ -9,11 +9,11 @@ export const metadata = {
     title: "Digital Advertising Services | Vanapex Technologies",
     description:
       "Vanapex specializes in Facebook & Instagram ads, Google Ads promotions, and location-based ad campaigns that convert traffic into loyal customers.",
-    url: "https://vanapex.com/ads",
+    url: "https://www.vanapex.com/ads",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/ads.png", // create a 1200x628 promo image
+        url: "https://www.vanapex.com/seo/ads.png", // create a 1200x628 promo image
         width: 1200,
         height: 628,
         alt: "Vanapex Digital Advertising Services",
@@ -27,10 +27,10 @@ export const metadata = {
     title: "Digital Advertising Services | Vanapex Technologies",
     description:
       "Get high-impact Facebook, Instagram, and Google Ads with Vanapex. Our ad campaigns drive engagement, brand awareness, and conversions.",
-    images: ["https://vanapex.com/seo/ads.png"],
+    images: ["https://www.vanapex.com/seo/ads.png"],
   },
   alternates: {
-    canonical: "https://vanapex.com/ads",
+    canonical: "https://www.vanapex.com/ads",
   },
   
 };
@@ -50,8 +50,8 @@ export default function PageRoot({ children }) {
             provider: {
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
             },
             areaServed: {
               "@type": "Place",
@@ -59,7 +59,7 @@ export default function PageRoot({ children }) {
             },
             offers: {
               "@type": "Offer",
-              url: "https://vanapex.com/ads",
+              url: "https://www.vanapex.com/ads",
               description:
                 "Targeted Facebook, Instagram, and Google Ads campaigns that drive brand awareness, engagement, and sales.",
               priceCurrency: "USD",

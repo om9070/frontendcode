@@ -34,7 +34,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://vanapex.com"), // base domain
+  metadataBase: new URL("https://www.vanapex.com"), // base domain
   alternates: {
     canonical: "/",
   },
@@ -57,17 +57,16 @@ export const metadata = {
     "software company in patna",
     "software company in india",
     "software company in latehar",
-
   ],
   openGraph: {
     title: "Vanapex Technologies | Website, Mobile App & AI Solutions",
     description:
       "We build websites, web apps, mobile apps, AI/ML solutions, and provide digital marketing services at affordable prices.",
-    url: "https://vanapex.com",
+    url: "https://www.vanapex.com",
     siteName: "Vanapex Technologies",
     images: [
       {
-        url: "https://vanapex.com/seo/home.png",
+        url: "https://www.vanapex.com/seo/home.png",
         width: 1200,
         height: 630,
         alt: "Vanapex Technologies Software Solutions",
@@ -81,7 +80,7 @@ export const metadata = {
     title: "Vanapex Technologies | Website, Mobile App & AI Solutions",
     description:
       "Experts in website development, mobile apps, AI/ML, and digital marketing.",
-    images: ["https://vanapex.com/seo/home.png"],
+    images: ["https://www.vanapex.com/seo/home.png"],
   },
   icons: {
     icon: "/favicon.ico", // your custom favicon
@@ -107,15 +106,22 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Vanapex Technologies",
-              url: "https://vanapex.com",
-              logo: "https://vanapex.com/logo.png",
+              url: "https://www.vanapex.com",
+              logo: "https://www.vanapex.com/logo.png",
               description:
                 "Vanapex Technologies specializes in website development, mobile applications, digital marketing, and AI & ML solutions.",
+              foundingDate: "2025",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Ranchi",
+                addressRegion: "Jharkhand",
+                addressCountry: "India",
+              },
               sameAs: [
                 "https://www.facebook.com/people/Vanapex/61580135445838/",
                 "https://www.instagram.com/vanapex_",
                 "https://www.linkedin.com/company/vanapex",
-                "https://x.com/vanapex",
+                "https://www.x.com/vanapex",
               ],
               knowsAbout: [
                 "Healthcare Software",
@@ -131,12 +137,9 @@ export default function RootLayout({ children }) {
                 "Logistics Applications",
                 "Accounting & Finance Tools",
                 "Web Hosting Solutions",
+                "Logo Designer",
+                "Graphic Designer"
               ],
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "India",
-                addressCountry: "IN",
-              },
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+91-8340606970",

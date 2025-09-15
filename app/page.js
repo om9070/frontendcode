@@ -2,6 +2,10 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import LoadingSpinner from "./loading";
 
+const RedesignSection = dynamic(() => import("@/components/redesignSection/RedesignSection"), {
+  loading: () => <p><LoadingSpinner /></p>,
+});
+
 const Email = dynamic(() => import("@/components/home/email"), {
   loading: () => <p><LoadingSpinner /></p>,
 });
@@ -59,6 +63,7 @@ export default function Home() {
         <ActcionTItle />
         <Technology />
         <Services />
+        <RedesignSection/>
         <DevelopmentProcess />
         <Faq />
         <WorkIdea />
