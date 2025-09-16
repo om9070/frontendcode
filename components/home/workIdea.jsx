@@ -25,7 +25,7 @@ export default function WorkIdea() {
 
   return (
     <>
-      <div className=" w-75 m-auto my-5 mb-3">
+      <div className="m-auto my-5 mb-3">
         <div className="row g-0" ref={sectionRef}>
           <div
             className={`col-md-5 animateOnScrollLeft ${visible ? "visible" : ""
