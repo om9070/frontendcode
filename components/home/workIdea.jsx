@@ -25,19 +25,18 @@ export default function WorkIdea() {
 
   return (
     <>
-      <div className=" w-75 m-auto my-4 mb-3">
+      <div className=" w-75 m-auto my-5 mb-3">
         <div className="row g-0" ref={sectionRef}>
           <div
-            className={`col-md-6 animateOnScrollLeft ${
-              visible ? "visible" : ""
-            }`}
+            className={`col-md-5 animateOnScrollLeft ${visible ? "visible" : ""
+              }`}
           >
             <Image
               src="/workSample.webp"
               className="img-fluid rounded-start"
               alt="sample"
               width={600}
-              height={320}
+              height={400}
               placeholder="blur"
               blurDataURL="/seo4.webp"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
@@ -46,15 +45,14 @@ export default function WorkIdea() {
             />
           </div>
           <div
-            className={`col-md-6 my-auto animateOnScrollRight ${
-              visible ? "visible" : ""
-            }`}
+            className={`col-md-7 my-auto animateOnScrollRight ${visible ? "visible" : ""
+              }`}
           >
             <div className="card-body">
-              <h5 className="my-4  card-tittle">
+              <h5 className="my-4  card-tittle" style={{ fontSize: "4rem", color: "linear-gradient(90deg, #00dbde, #0ea5e9)" }}>
                 Grow Your Website With Our Team.
               </h5>
-              <p className="card-text color font">
+              <p className="card-text font" style={{ fontSize: "1.5rem",color:"#6b7280" }}>
                 Partner with our expert team to build, scale, and optimize your
                 website for performance, visibility, and long-term success.
               </p>
